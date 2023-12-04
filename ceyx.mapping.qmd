@@ -1,0 +1,135 @@
+---
+title: "Ceyx Mapping"
+format:
+  html:
+    code-fold: show
+    code-tools: true
+toc: true
+toc-title: Document Contents
+number-sections: true
+embed-resources: true
+---
+
+## read in data and load packages
+```{r}
+#| output: false
+library(vcfR) #v1.14.0
+library(ggplot2) #v3.4.4
+library(maps) #v3.4.1.1
+library(sf) #v1.0-14
+library(RColorBrewer) #v1.1-3
+#read vcf
+vcfR<-read.vcfR("~/Desktop/nmel.ceyx.rad/filtered.snps.vcf.gz")
+#read in sampling details
+sample.info<-read.csv("~/Desktop/nmel.ceyx.rad/ceyx.full.sampling.csv")
+```
+
+## prepare datframes for plotting
+```{r}
+#prune sampling so it matches the files retained in the vcf
+samps<-sample.info[sample.info$ID %in% colnames(vcfR@gt)[-1],]
+#round lat and longs to group sampling points within .1 degrees
+samps$lat<-round(samps$lat,1)
+samps$long<-round(samps$long,1)
+#manually combine nearby sampling sites
+samps[69,8]<- -10.6
+samps[63:65,8]<- -9.5
+samps[63:65,9]<- 160
+samps[55,8]<- -7.1
+samps[55,9]<- 157
+samps[1,8]<- -6.9
+samps[13,9]<- 145
+samps[16,8]<- -6.9
+samps[14,8]<- -4.5
+samps[14,9]<- 145
+samps[107,8]<- -2.1
+samps[107,9]<- 147
+samps[33:35,8]<- -5.6
+samps[33:35,9]<- 150.6
+samps[41,8]<- -6.2
+samps[41,9]<- 155.3
+
+#split df by species
+spec.dfs<-split(samps, samps$species)
+
+#init sampling.df which will be a df of samples grouped by unique lat/long
+sampling.df<-data.frame(NULL)
+for (i in names(spec.dfs)){
+  samps<-spec.dfs[[i]] %>% dplyr::group_by(lat, long) %>% dplyr::summarize(count=dplyr::n())
+  df<-cbind(rep(i, times=nrow(samps)), samps)
+  sampling.df<-as.data.frame(rbind(sampling.df, df))
+}
+
+#fix colnames
+colnames(sampling.df)<-c("species","lat","long","count")
+#reorder factors
+sampling.df$species <- factor(sampling.df$species, levels = c("margarethae","dispar","gentianus","malaitae","meeki","nigromaxilla","collectoris","sacerdotis","solitarius","mulcatus"))
+```
+
+## plot just margarethae for the inset
+```{r}
+#make map#
+pac<-map_data("world")
+
+# plot just marg
+ggplot()+
+  geom_polygon(data = pac, aes(x=long, y = lat, group = group), fill="lightgrey", col="black", cex=.1)+
+  coord_sf(xlim = c(115, 130), ylim = c(4, 20)) + 
+  geom_point(data = sampling.df[sampling.df$species == "margarethae",], aes(x = long, y = lat, fill=species, size=count), pch=21, color="black", alpha =.8, show.legend=TRUE) +
+  theme_classic()+
+  scale_fill_manual(values=c("white"))+
+  scale_size_continuous(range = c(3,6))+
+  guides(fill = guide_legend(override.aes = list(size = 4), order=1, label.theme = element_text(face = "italic")),
+         linewidth = guide_legend(order = 2))+
+  theme(legend.position = NULL)
+ggsave("~/Desktop/nmel.ceyx.rad/margarethae.map.pdf",width = 4, height = 4.5, units="in")
+```
+
+## plot all of the nmel species together
+We will use Paul Tol's [muted qualitative color scheme](https://personal.sron.nl/~pault/data/colourschemes.pdf), which is a color-blind friendly diverging palette, plus the addition of white, for the outgroup margarethae.
+```{r}
+# plot all samples
+ggplot()+
+  geom_polygon(data = pac, aes(x=long, y = lat, group = group), fill="lightgrey", col="black", cex=.1)+
+  coord_sf(xlim = c(143, 162), ylim = c(-12, -2)) + 
+  geom_point(data = sampling.df, aes(x = long, y = lat, fill=species, size=count), pch=21, color="black", alpha =.8, show.legend=TRUE) +
+  theme_classic()+
+  scale_fill_manual(values=c("#FFFFFF","#332288","#88CCEE","#44AA99","#117733","#999933","#DDCC77","#CC6677","#882255","#AA4499"))+
+  scale_size_continuous(range = c(3,6))+
+  guides(fill = guide_legend(override.aes = list(size = 6), order=1, label.theme = element_text(face = "italic")),
+         size = guide_legend(order = 2))+
+  theme(legend.position = NULL)
+ggsave("~/Desktop/nmel.ceyx.rad/sampling.map.pdf",width = 9, height = 4.5, units="in")
+```
+
+## plot a blown up inset showing the sampling within the New Georgia group
+```{r}
+ggplot()+
+  geom_polygon(data = pac, aes(x=long, y = lat, group = group), fill="lightgrey", col="black", cex=.1)+
+  coord_sf(xlim = c(156.4, 158.3), ylim = c(-7.5, -9)) + 
+  geom_point(data = sampling.df, aes(x = long, y = lat, fill=species, size=count), pch=21, color="black", alpha =.8, show.legend=TRUE) +
+  theme_classic()+
+  scale_fill_manual(values=c("#FFFFFF","#332288","#88CCEE","#44AA99","#117733","#999933","#DDCC77","#CC6677","#882255","#AA4499"))+
+  scale_size_continuous(range = c(3,6))+
+  guides(fill = guide_legend(override.aes = list(size = 6), order=1, label.theme = element_text(face = "italic")),
+         size = guide_legend(order = 2))+
+  theme(legend.position = NULL)
+ggsave("~/Desktop/nmel.ceyx.rad/NG.sampling.pdf",width = 4, height = 4, units="in")
+```
+
+## plot all samples without the NG group dots included
+```{r}
+# plot all samples without the NG group dots included
+ggplot()+
+  geom_polygon(data = pac, aes(x=long, y = lat, group = group), fill="lightgrey", col="black", cex=.1)+
+  coord_sf(xlim = c(143, 162), ylim = c(-12, -2)) + 
+  geom_point(data = sampling.df[sampling.df$species != "collectoris",], aes(x = long, y = lat, fill=species, size=count), pch=21, color="black", alpha =.8, show.legend=TRUE) +
+  theme_classic()+
+  scale_fill_manual(values=c("#FFFFFF","#332288","#88CCEE","#44AA99","#117733","#999933","#CC6677","#882255","#AA4499"))+
+  scale_size_continuous(range = c(3,6))+
+  guides(fill = guide_legend(override.aes = list(size = 6), order=1, label.theme = element_text(face = "italic")),
+         size = guide_legend(order = 2))+
+  theme(legend.position = NULL)
+ggsave("~/Desktop/nmel.ceyx.rad/sampling.map.noNG.pdf",width = 9, height = 4.5, units="in")
+```
+

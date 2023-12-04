@@ -1,0 +1,88 @@
+---
+title: "Make splitstree and pairwise FSTs"
+format:
+  html:
+    code-fold: show
+    code-tools: true
+toc: true
+toc-title: Document Contents
+number-sections: true
+embed-resources: true
+---
+
+## load packages and vcf
+```{r}
+library(vcfR)
+library(ggplot2)
+library(StAMPP)
+library(adegenet)
+#read vcfr
+v<-read.vcfR("~/Desktop/nmel.ceyx.rad/filtered.snps.vcf.gz")
+```
+
+## make splitstree
+```{r}
+#convert to genlight
+gen<-vcfR2genlight(v)
+#fix sample names to fit in <= 10 characters
+gen@ind.names
+gen@ind.names<-gsub("C_collectoris","co", gen@ind.names)
+gen@ind.names<-gsub("C_margarethae","mar", gen@ind.names)
+gen@ind.names<-gsub("C_gentianus","gen", gen@ind.names)
+gen@ind.names<-gsub("C_solitarius","sol", gen@ind.names)
+gen@ind.names<-gsub("C_nigromaxilla","ni", gen@ind.names)
+gen@ind.names<-gsub("C_malaitae","ml", gen@ind.names)
+gen@ind.names<-gsub("C_meeki","me", gen@ind.names)
+gen@ind.names<-gsub("C_dispar","dis", gen@ind.names)
+gen@ind.names<-gsub("C_sacerdotis","sac", gen@ind.names)
+gen@ind.names<-gsub("C_mulcatus","mul", gen@ind.names)
+gen@ind.names
+pop(gen)<-gen@ind.names
+#assign populations (a StaMPP requirement)
+gen@pop<-as.factor(gen@ind.names)
+#generate pairwise divergence matrix
+sample.div <- stamppNeisD(gen, pop = FALSE)
+#export for splitstree
+#stamppPhylip(distance.mat=sample.div, file="~/Desktop/nmel.ceyx.rad/ceyx.90.splits.txt")
+
+#splitstree looks clean, no evidence of weird clustering driven by missing data
+knitr::include_graphics("/Users/devonderaad/Desktop/ceyx.90.splits.png")
+
+#splitstree color-coded by species with bird images overlaid
+knitr::include_graphics("/Users/devonderaad/Desktop/splits.with.birds.png")
+```
+
+## calculate pairwise Fst between the nine described species
+```{r}
+#calculate Fst and fixed differences
+#read in sampling details
+sample.info<-read.csv("~/Desktop/nmel.ceyx.rad/ceyx.full.sampling.csv")
+#prune sampling so it matches the files retained in the vcf
+samps<-sample.info[sample.info$ID %in% colnames(v@gt)[-1],]
+
+#convert to genlight
+gen<-vcfR2genlight(v)
+#organize sample order to match order in genlight object
+gen@ind.names == samps$ID
+samps<-samps[match(gen@ind.names, samps$ID),]
+gen@ind.names == samps$ID
+#assign samples to pops
+gen@pop<-as.factor(samps$species)
+di.heat<-stamppFst(gen)
+m<-di.heat$Fsts
+#fill in upper triangle of matrix
+m[upper.tri(m)] <- t(m)[upper.tri(m)]
+#melt for plotting
+heat <- reshape::melt(m)
+
+#plot with labels
+ggplot(data = heat, aes(x=X1, y=X2, fill=value)) + 
+  geom_tile()+
+  geom_text(data=heat,aes(label=round(value, 2)))+
+  theme_minimal()+
+  scale_fill_gradient2(low = "white", high = "red", space = "Lab", name="Fst") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+        axis.text.y = element_text(angle = 45, hjust = 1))
+#ggsave("~/Desktop/nmel.ceyx.rad/all.clades.pairwise.fst.pdf",width=5.6, height=4, units="in")
+```
+
