@@ -12,6 +12,7 @@ embed-resources: true
 
 ## load packages and vcf
 ```{r}
+#| output: false
 library(vcfR)
 library(ggplot2)
 library(StAMPP)
