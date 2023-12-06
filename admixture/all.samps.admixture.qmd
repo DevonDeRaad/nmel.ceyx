@@ -1,0 +1,246 @@
+---
+title: "run admixture on Ceyx"
+format:
+  html:
+    code-fold: show
+    code-tools: true
+toc: true
+toc-title: Document Contents
+number-sections: true
+embed-resources: true
+---
+
+## load packages and SNP data
+```{r}
+#| output: false
+library(vcfR)
+library(SNPfiltR)
+library(ggplot2)
+#read vcfr
+v<-read.vcfR("~/Desktop/nmel.ceyx.rad/filtered.unlinked.snps.vcf.gz")
+```
+
+## Try filtering input unlinked SNP dataset to remove singletons, to increase signal to noise ratio
+```{r}
+#read in sampling details
+sample.info<-read.csv("~/Desktop/nmel.ceyx.rad/ceyx.full.sampling.csv")
+#prune sampling so it matches the files retained in the vcf
+sample.info<-sample.info[sample.info$ID %in% colnames(v@gt)[-1],]
+#get details on vcf
+v
+colnames(v@gt)
+
+#remove outgroup philippines samples and all invariant resulting SNPs
+v<-v[,c(1:20,26:91,93,94,96:108)]
+#do a separate filtering protocol to remove singletons MAC thresholds
+vcf<-min_mac(v, min.mac = 1)
+vcf
+
+##write out vcf file and move to the cluster
+#vcfR::write.vcf(vcf, file="~/Desktop/nmel.ceyx.rad/unlinked.noPhil.vcf.gz")
+
+#do a separate filtering protocol to remove singletons MAC thresholds
+vcf.2<-min_mac(v, min.mac = 2)
+vcf.2
+
+##write out vcf file and move to the cluster
+#vcfR::write.vcf(vcf.2, file="~/Desktop/nmel.ceyx.rad/unlinked.noPhil.mac2.vcf.gz")
+
+#re-prune sampling so it matches the files retained in the vcf (i.e., no Philippines)
+sample.info<-sample.info[sample.info$ID %in% colnames(v@gt)[-1],]
+#reorder sample info so clades are together
+sample.info<-sample.info[c(1:72,90:93,73:89,94:100),]
+```
+
+## show the code used to run ADMIXTURE on the KUHPCC
+```{bash, eval=FALSE}
+#!/bin/sh
+#
+#SBATCH --job-name=admixture.all              # Job Name
+#SBATCH --nodes=1             # 40 nodes
+#SBATCH --ntasks-per-node=5               # 40 CPU allocation per Task
+#SBATCH --partition=sixhour            # Name of the Slurm partition used
+#SBATCH --chdir=/home/d669d153/work/nmel.ceyx/admixture.all     # Set working d$
+#SBATCH --mem-per-cpu=1gb            # memory requested
+#SBATCH --time=200
+
+#use plink to convert vcf directly to bed format:
+/home/d669d153/work/plink --vcf /home/d669d153/work/nmel.ceyx/admixture.all/unlinked.noPhil.vcf  --double-id --allow-extra-chr --make-bed --out binary_fileset
+#fix chromosome names
+cut -f2- binary_fileset.bim  > temp
+awk 'BEGIN{FS=OFS="\t"}{print value 1 OFS $0}' temp > binary_fileset.bim
+rm temp
+
+#run admixture for a K of 1-15, using cross-validation, with 5 threads
+for K in {1..15}; 
+do /home/d669d153/work/admixture_linux-1.3.0/admixture --cv -j5 -m EM binary_fileset.bed $K | tee log${K}.out;
+done
+
+#Which K iteration is optimal according to ADMIXTURE ?
+grep -h CV log*.out > log.errors.txt
+```
+
+### Visualize ADMIXTURE results, all samples, no MAC filter
+```{r}
+#setwd to admixture directory run on the cluster
+setwd("~/Desktop/nmel.ceyx.rad/admixture.all")
+#read in log error values to determine optimal K
+log<-read.table("log.errors.txt")[,c(3:4)]
+#use double backslash to interpret the opening parentheses literally in the regular expression
+log$V3<-gsub("\\(K=", "", log$V3)
+log$V3<-gsub("):", "", log$V3)
+#interpret K values as numerical
+log$V3<-as.numeric(log$V3)
+#rename columns
+colnames(log)<-c("Kvalue","cross.validation.error")
+#make plot showing the cross validation error across K values 1:10
+ggplot(data=log, aes(x=Kvalue, y=cross.validation.error, group=1)) +
+  geom_line(linetype = "dashed")+
+  geom_point()+
+  ylab("cross-validation error")+
+  xlab("K")+
+  scale_x_continuous(breaks = c(1:15))+
+  theme_classic()
+```
+
+```{r, fig.height=10, fig.width=8}
+#setwd to admixture directory run on the cluster
+setwd("~/Desktop/nmel.ceyx.rad/admixture.all")
+#read in input file in order to get list of input samples in order
+samps<-read.table("binary_fileset.fam")[,1]
+#reorder sampling df to match order of the plot
+#sample.info<-sample.info[match(samps, sample.info$ID),]
+#sample.info$ID == samps
+#read in all ten runs and save each dataframe in a list
+runs<-list()
+#read in log files
+for (i in 1:15){
+  runs[[i]]<-read.table(paste0("binary_fileset.", i, ".Q"))
+}
+
+#reorder runs to match sampling df order
+for (i in 1:15){
+  runs[[i]]<-runs[[i]][match(sample.info$ID, samps),]
+}
+
+#print sample order
+sample.info$species
+
+#plot
+par(mfrow=c(5,1))
+#plot each run
+for (i in 1:5){
+barplot(t(as.matrix(runs[[i]])), col=rainbow(i), ylab="Ancestry", border="black")
+}
+
+for (i in 6:10){
+barplot(t(as.matrix(runs[[i]])), col=rainbow(i), ylab="Ancestry", border="black")
+}
+
+for (i in 11:15){
+barplot(t(as.matrix(runs[[i]])), col=rainbow(i), ylab="Ancestry", border="black")
+}
+```
+
+## now run ADMIXTURE on the no singletons dataset for the same samples on the KUHPCC
+```{bash, eval=FALSE}
+#!/bin/sh
+#
+#SBATCH --job-name=admixture.all              # Job Name
+#SBATCH --nodes=1             # 40 nodes
+#SBATCH --ntasks-per-node=5               # 40 CPU allocation per Task
+#SBATCH --partition=sixhour            # Name of the Slurm partition used
+#SBATCH --chdir=/home/d669d153/work/nmel.ceyx/admixture.all.nosingletons     # Set working d$
+#SBATCH --mem-per-cpu=1gb            # memory requested
+#SBATCH --time=200
+
+#use plink to convert vcf directly to bed format:
+/home/d669d153/work/plink --vcf /home/d669d153/work/nmel.ceyx/admixture.all.nosingletons/unlinked.noPhil.mac2.vcf  --double-id --allow-extra-chr --make-bed --out binary_fileset
+#fix chromosome names
+cut -f2- binary_fileset.bim  > temp
+awk 'BEGIN{FS=OFS="\t"}{print value 1 OFS $0}' temp > binary_fileset.bim
+rm temp
+
+#run admixture for a K of 1-15, using cross-validation, with 5 threads
+for K in {1..15}; 
+do /home/d669d153/work/admixture_linux-1.3.0/admixture --cv -j5 -m EM binary_fileset.bed $K | tee log${K}.out;
+done
+
+#Which K iteration is optimal according to ADMIXTURE ?
+grep -h CV log*.out > log.errors.txt
+```
+
+### Visualize ADMIXTURE results, all samples, with singletons removed
+```{r}
+#setwd to admixture directory run on the cluster
+setwd("~/Desktop/nmel.ceyx.rad/admixture.all.nosingletons")
+#read in log error values to determine optimal K
+log<-read.table("log.errors.txt")[,c(3:4)]
+#use double backslash to interpret the opening parentheses literally in the regular expression
+log$V3<-gsub("\\(K=", "", log$V3)
+log$V3<-gsub("):", "", log$V3)
+#interpret K values as numerical
+log$V3<-as.numeric(log$V3)
+#rename columns
+colnames(log)<-c("Kvalue","cross.validation.error")
+#make plot showing the cross validation error across K values 1:10
+ggplot(data=log, aes(x=Kvalue, y=cross.validation.error, group=1)) +
+  geom_line(linetype = "dashed")+
+  geom_point()+
+  ylab("cross-validation error")+
+  xlab("K")+
+  scale_x_continuous(breaks = c(1:15))+
+  theme_classic()
+```
+
+```{r, fig.height=10, fig.width=8}
+#setwd to admixture directory run on the cluster
+setwd("~/Desktop/nmel.ceyx.rad/admixture.all.nosingletons")
+#read in input file in order to get list of input samples in order
+samps<-read.table("binary_fileset.fam")[,1]
+#reorder sampling df to match order of the plot
+#sample.info<-sample.info[match(samps, sample.info$ID),]
+#sample.info$ID == samps
+#read in all ten runs and save each dataframe in a list
+runs<-list()
+#read in log files
+for (i in 1:15){
+  runs[[i]]<-read.table(paste0("binary_fileset.", i, ".Q"))
+}
+
+#reorder runs to match sampling df
+for (i in 1:15){
+  runs[[i]]<-runs[[i]][match(sample.info$ID, samps),]
+}
+
+#print sample order
+sample.info$species
+
+#plot
+par(mfrow=c(5,1))
+#plot each run
+for (i in 1:5){
+barplot(t(as.matrix(runs[[i]])), col=rainbow(i), ylab="Ancestry", border="black")
+}
+
+for (i in 6:10){
+barplot(t(as.matrix(runs[[i]])), col=rainbow(i), ylab="Ancestry", border="black")
+}
+
+for (i in 11:15){
+barplot(t(as.matrix(runs[[i]])), col=rainbow(i), ylab="Ancestry", border="black")
+}
+```
+
+## replot optimal iteration with correct color scheme
+```{r}
+#show sample order
+sample.info[,c(1,7)]
+#plot
+barplot(t(as.matrix(runs[[9]])), col=c("grey","#44AA99","#117733","#DDCC77","#882255","#CC6677","#999933","#AA4499","#88CCEE"), ylab="Ancestry", border="black")
+#save barplot
+#pdf("~/Desktop/nmel.ceyx.rad/nophil.admix.mac2.pdf", width = 7, height=2.75)
+#barplot(t(as.matrix(runs[[9]])), col=c("grey","#44AA99","#117733","#DDCC77","#882255","#CC6677","#999933","#AA4499","#88CCEE"), ylab="Ancestry", border="black")
+#dev.off()
+```
+

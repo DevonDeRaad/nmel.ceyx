@@ -55,10 +55,15 @@ knitr::include_graphics("/Users/devonderaad/Desktop/splits.with.birds.png")
 
 ## calculate pairwise Fst between the nine described species
 ```{r}
-#calculate Fst and fixed differences
+#calculate Fst
 #read in sampling details
 sample.info<-read.csv("~/Desktop/nmel.ceyx.rad/ceyx.full.sampling.csv")
-#prune sampling so it matches the files retained in the vcf
+#remove outgroup philippines samples from the vcf
+v<-v[,c(1:20,26:91,93,94,96:108)]
+#filter to remove sites that became invariant
+v<-min_mac(v, min.mac = 1)
+v
+#prune sampling so it matches the files retained in the vcf (i.e., no Philippines and only samples that passed filtering)
 samps<-sample.info[sample.info$ID %in% colnames(v@gt)[-1],]
 
 #convert to genlight
@@ -78,12 +83,12 @@ heat <- reshape::melt(m)
 
 #plot with labels
 ggplot(data = heat, aes(x=X1, y=X2, fill=value)) + 
-  geom_tile()+
+  geom_tile(color = "black", size=.1)+
   geom_text(data=heat,aes(label=round(value, 2)))+
   theme_minimal()+
   scale_fill_gradient2(low = "white", high = "red", space = "Lab", name="Fst") +
   theme(axis.text.x = element_text(angle = 45, hjust = 1),
         axis.text.y = element_text(angle = 45, hjust = 1))
-#ggsave("~/Desktop/nmel.ceyx.rad/all.clades.pairwise.fst.pdf",width=5.6, height=4, units="in")
+#ggsave("~/Desktop/nmel.ceyx.rad/all.clades.pairwise.fst.pdf",width=5.4, height=4.4, units="in")
 ```
 
