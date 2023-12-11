@@ -1,0 +1,2630 @@
+# Note: Individual distributions can be extracted using the `stacks-dist-extract` utility.
+#       e.g. `stacks-dist-extract populations.log.distribs dist_name`
+
+BEGIN batch_progress
+VYZU01000008.1: analyzed 2 loci; filtered 195 loci; 197 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01000014.1: analyzed 2 loci; filtered 239 loci; 241 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01000020.1: analyzed 3 loci; filtered 237 loci; 240 loci seen.
+    297 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01000040.1: analyzed 2 loci; filtered 94 loci; 96 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01000048.1: analyzed 2 loci; filtered 238 loci; 240 loci seen.
+    205 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01000077.1: analyzed 2 loci; filtered 277 loci; 279 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01000101.1: analyzed 2 loci; filtered 75 loci; 77 loci seen.
+    202 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01000125.1: analyzed 2 loci; filtered 194 loci; 196 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01000160.1: analyzed 2 loci; filtered 59 loci; 61 loci seen.
+    197 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01000173.1: analyzed 2 loci; filtered 225 loci; 227 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01000302.1: analyzed 2 loci; filtered 161 loci; 163 loci seen.
+    197 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01000368.1: analyzed 2 loci; filtered 207 loci; 209 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01000594.1: analyzed 2 loci; filtered 175 loci; 177 loci seen.
+    190 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01000883.1: analyzed 2 loci; filtered 139 loci; 141 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01000906.1: analyzed 3 loci; filtered 242 loci; 245 loci seen.
+    291 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01000913.1: analyzed 2 loci; filtered 28 loci; 30 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01000931.1: analyzed 2 loci; filtered 413 loci; 415 loci seen.
+    197 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01000951.1: analyzed 3 loci; filtered 324 loci; 327 loci seen.
+    305 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01000978.1: analyzed 2 loci; filtered 73 loci; 75 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01000994.1: analyzed 2 loci; filtered 131 loci; 133 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01001011.1: analyzed 2 loci; filtered 67 loci; 69 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01001020.1: analyzed 2 loci; filtered 259 loci; 261 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01001092.1: analyzed 2 loci; filtered 286 loci; 288 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01001110.1: analyzed 2 loci; filtered 149 loci; 151 loci seen.
+    205 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01001162.1: analyzed 2 loci; filtered 266 loci; 268 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01001260.1: analyzed 2 loci; filtered 76 loci; 78 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01001381.1: analyzed 2 loci; filtered 328 loci; 330 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01001865.1: analyzed 2 loci; filtered 159 loci; 161 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01001888.1: analyzed 2 loci; filtered 172 loci; 174 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01001891.1: analyzed 2 loci; filtered 134 loci; 136 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01001898.1: analyzed 2 loci; filtered 380 loci; 382 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01001943.1: analyzed 2 loci; filtered 179 loci; 181 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01001945.1: analyzed 2 loci; filtered 42 loci; 44 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01001952.1: analyzed 2 loci; filtered 68 loci; 70 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01001967.1: analyzed 2 loci; filtered 251 loci; 253 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01002007.1: analyzed 2 loci; filtered 382 loci; 384 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01002121.1: analyzed 2 loci; filtered 553 loci; 555 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01002572.1: analyzed 2 loci; filtered 229 loci; 231 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01002953.1: analyzed 2 loci; filtered 162 loci; 164 loci seen.
+    206 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01003066.1: analyzed 2 loci; filtered 461 loci; 463 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01003091.1: analyzed 2 loci; filtered 26 loci; 28 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01003100.1: analyzed 2 loci; filtered 170 loci; 172 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01003107.1: analyzed 2 loci; filtered 318 loci; 320 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01003137.1: analyzed 2 loci; filtered 176 loci; 178 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01003158.1: analyzed 2 loci; filtered 110 loci; 112 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01003185.1: analyzed 2 loci; filtered 383 loci; 385 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01003268.1: analyzed 2 loci; filtered 223 loci; 225 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01003465.1: analyzed 2 loci; filtered 70 loci; 72 loci seen.
+    197 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01003583.1: analyzed 2 loci; filtered 222 loci; 224 loci seen.
+    174 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01003939.1: analyzed 2 loci; filtered 120 loci; 122 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01004003.1: analyzed 2 loci; filtered 332 loci; 334 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01004036.1: analyzed 3 loci; filtered 242 loci; 245 loci seen.
+    287 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01004069.1: analyzed 3 loci; filtered 389 loci; 392 loci seen.
+    303 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01004106.1: analyzed 2 loci; filtered 354 loci; 356 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01004185.1: analyzed 2 loci; filtered 268 loci; 270 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01004224.1: analyzed 2 loci; filtered 190 loci; 192 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01004310.1: analyzed 2 loci; filtered 40 loci; 42 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01004381.1: analyzed 2 loci; filtered 110 loci; 112 loci seen.
+    109 genomic sites, of which 85 were covered by multiple loci (78.0%).
+VYZU01004455.1: analyzed 2 loci; filtered 116 loci; 118 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01004758.1: analyzed 2 loci; filtered 135 loci; 137 loci seen.
+    184 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01004819.1: analyzed 2 loci; filtered 42 loci; 44 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01004862.1: analyzed 2 loci; filtered 48 loci; 50 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01005040.1: analyzed 2 loci; filtered 212 loci; 214 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01005052.1: analyzed 3 loci; filtered 540 loci; 543 loci seen.
+    289 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01005077.1: analyzed 2 loci; filtered 395 loci; 397 loci seen.
+    190 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01005165.1: analyzed 2 loci; filtered 343 loci; 345 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01005220.1: analyzed 2 loci; filtered 370 loci; 372 loci seen.
+    189 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01005269.1: analyzed 2 loci; filtered 167 loci; 169 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01005609.1: analyzed 2 loci; filtered 301 loci; 303 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01005791.1: analyzed 2 loci; filtered 217 loci; 219 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01005879.1: analyzed 2 loci; filtered 362 loci; 364 loci seen.
+    197 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01005892.1: analyzed 2 loci; filtered 112 loci; 114 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01005909.1: analyzed 2 loci; filtered 171 loci; 173 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01005935.1: analyzed 2 loci; filtered 116 loci; 118 loci seen.
+    207 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01005940.1: analyzed 2 loci; filtered 126 loci; 128 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01005949.1: analyzed 2 loci; filtered 234 loci; 236 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01006011.1: analyzed 2 loci; filtered 559 loci; 561 loci seen.
+    199 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01006104.1: analyzed 2 loci; filtered 226 loci; 228 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01006328.1: analyzed 2 loci; filtered 288 loci; 290 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01006597.1: analyzed 2 loci; filtered 56 loci; 58 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01006648.1: analyzed 2 loci; filtered 17 loci; 19 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01006663.1: analyzed 2 loci; filtered 58 loci; 60 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01006724.1: analyzed 2 loci; filtered 442 loci; 444 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01006746.1: analyzed 2 loci; filtered 97 loci; 99 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01006752.1: analyzed 2 loci; filtered 141 loci; 143 loci seen.
+    197 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01006785.1: analyzed 2 loci; filtered 399 loci; 401 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01006821.1: analyzed 2 loci; filtered 277 loci; 279 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01006834.1: analyzed 2 loci; filtered 40 loci; 42 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01006848.1: analyzed 2 loci; filtered 186 loci; 188 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01006860.1: analyzed 2 loci; filtered 140 loci; 142 loci seen.
+    187 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01006865.1: analyzed 2 loci; filtered 130 loci; 132 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01006918.1: analyzed 2 loci; filtered 146 loci; 148 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01007075.1: analyzed 2 loci; filtered 390 loci; 392 loci seen.
+    197 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01007618.1: analyzed 2 loci; filtered 242 loci; 244 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01007718.1: analyzed 2 loci; filtered 267 loci; 269 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01007723.1: analyzed 2 loci; filtered 193 loci; 195 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01007797.1: analyzed 2 loci; filtered 805 loci; 807 loci seen.
+    197 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01007830.1: analyzed 2 loci; filtered 242 loci; 244 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01008051.1: analyzed 2 loci; filtered 539 loci; 541 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01008079.1: analyzed 2 loci; filtered 46 loci; 48 loci seen.
+    190 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01008117.1: analyzed 2 loci; filtered 228 loci; 230 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01008483.1: analyzed 2 loci; filtered 158 loci; 160 loci seen.
+    187 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01008493.1: analyzed 2 loci; filtered 146 loci; 148 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01008501.1: analyzed 2 loci; filtered 294 loci; 296 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01008515.1: analyzed 2 loci; filtered 178 loci; 180 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01008521.1: analyzed 2 loci; filtered 201 loci; 203 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01008579.1: analyzed 3 loci; filtered 563 loci; 566 loci seen.
+    286 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01008598.1: analyzed 2 loci; filtered 176 loci; 178 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01008684.1: analyzed 2 loci; filtered 447 loci; 449 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01009093.1: analyzed 2 loci; filtered 785 loci; 787 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01009257.1: analyzed 2 loci; filtered 201 loci; 203 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01009288.1: analyzed 2 loci; filtered 209 loci; 211 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01009290.1: analyzed 2 loci; filtered 430 loci; 432 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01009336.1: analyzed 2 loci; filtered 168 loci; 170 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01009372.1: analyzed 2 loci; filtered 92 loci; 94 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01009403.1: analyzed 2 loci; filtered 102 loci; 104 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01009416.1: analyzed 2 loci; filtered 120 loci; 122 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01009495.1: analyzed 2 loci; filtered 133 loci; 135 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01009636.1: analyzed 2 loci; filtered 201 loci; 203 loci seen.
+    197 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01009818.1: analyzed 2 loci; filtered 416 loci; 418 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01010110.1: analyzed 2 loci; filtered 215 loci; 217 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01010122.1: analyzed 2 loci; filtered 51 loci; 53 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01010128.1: analyzed 2 loci; filtered 130 loci; 132 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01010145.1: analyzed 2 loci; filtered 289 loci; 291 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01010279.1: analyzed 2 loci; filtered 695 loci; 697 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01010429.1: analyzed 2 loci; filtered 310 loci; 312 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01010583.1: analyzed 2 loci; filtered 137 loci; 139 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01010902.1: analyzed 2 loci; filtered 223 loci; 225 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01010925.1: analyzed 2 loci; filtered 288 loci; 290 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01010935.1: analyzed 2 loci; filtered 756 loci; 758 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01010987.1: analyzed 2 loci; filtered 100 loci; 102 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01011003.1: analyzed 2 loci; filtered 71 loci; 73 loci seen.
+    198 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01011011.1: analyzed 2 loci; filtered 453 loci; 455 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01011152.1: analyzed 2 loci; filtered 241 loci; 243 loci seen.
+    190 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01011214.1: analyzed 2 loci; filtered 206 loci; 208 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01011298.1: analyzed 2 loci; filtered 199 loci; 201 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01011565.1: analyzed 2 loci; filtered 393 loci; 395 loci seen.
+    144 genomic sites, of which 48 were covered by multiple loci (33.3%).
+VYZU01012033.1: analyzed 2 loci; filtered 131 loci; 133 loci seen.
+    211 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01012047.1: analyzed 2 loci; filtered 136 loci; 138 loci seen.
+    197 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01012070.1: analyzed 2 loci; filtered 196 loci; 198 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01012071.1: analyzed 2 loci; filtered 50 loci; 52 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01012075.1: analyzed 2 loci; filtered 133 loci; 135 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01012082.1: analyzed 2 loci; filtered 440 loci; 442 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01012105.1: analyzed 2 loci; filtered 214 loci; 216 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01012134.1: analyzed 2 loci; filtered 354 loci; 356 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01012189.1: analyzed 2 loci; filtered 72 loci; 74 loci seen.
+    197 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01012474.1: analyzed 2 loci; filtered 754 loci; 756 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01012917.1: analyzed 2 loci; filtered 178 loci; 180 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01013128.1: analyzed 2 loci; filtered 608 loci; 610 loci seen.
+    198 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01013190.1: analyzed 2 loci; filtered 213 loci; 215 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01013199.1: analyzed 2 loci; filtered 114 loci; 116 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01013222.1: analyzed 2 loci; filtered 113 loci; 115 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01013245.1: analyzed 2 loci; filtered 96 loci; 98 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01013248.1: analyzed 4 loci; filtered 189 loci; 193 loci seen.
+    388 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01013269.1: analyzed 2 loci; filtered 25 loci; 27 loci seen.
+    173 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01013312.1: analyzed 2 loci; filtered 165 loci; 167 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01013327.1: analyzed 2 loci; filtered 448 loci; 450 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01013573.1: analyzed 2 loci; filtered 121 loci; 123 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01013796.1: analyzed 2 loci; filtered 322 loci; 324 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01014106.1: analyzed 2 loci; filtered 204 loci; 206 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01014125.1: analyzed 3 loci; filtered 260 loci; 263 loci seen.
+    290 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01014143.1: analyzed 2 loci; filtered 114 loci; 116 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01014162.1: analyzed 2 loci; filtered 157 loci; 159 loci seen.
+    190 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01014182.1: analyzed 2 loci; filtered 307 loci; 309 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01014208.1: analyzed 2 loci; filtered 96 loci; 98 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01014220.1: analyzed 2 loci; filtered 498 loci; 500 loci seen.
+    190 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01014412.1: analyzed 2 loci; filtered 462 loci; 464 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01014549.1: analyzed 2 loci; filtered 249 loci; 251 loci seen.
+    200 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01014812.1: analyzed 2 loci; filtered 85 loci; 87 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01014826.1: analyzed 2 loci; filtered 223 loci; 225 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01014835.1: analyzed 2 loci; filtered 116 loci; 118 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01014842.1: analyzed 2 loci; filtered 164 loci; 166 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01014862.1: analyzed 2 loci; filtered 269 loci; 271 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01014884.1: analyzed 2 loci; filtered 334 loci; 336 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01014959.1: analyzed 2 loci; filtered 258 loci; 260 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01014981.1: analyzed 2 loci; filtered 225 loci; 227 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01015061.1: analyzed 2 loci; filtered 567 loci; 569 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01015132.1: analyzed 2 loci; filtered 53 loci; 55 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01015239.1: analyzed 2 loci; filtered 314 loci; 316 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01015602.1: analyzed 2 loci; filtered 387 loci; 389 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01015610.1: analyzed 2 loci; filtered 175 loci; 177 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01015618.1: analyzed 2 loci; filtered 208 loci; 210 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01015653.1: analyzed 2 loci; filtered 209 loci; 211 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01015690.1: analyzed 2 loci; filtered 253 loci; 255 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01015719.1: analyzed 2 loci; filtered 276 loci; 278 loci seen.
+    199 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01015818.1: analyzed 2 loci; filtered 94 loci; 96 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01016184.1: analyzed 2 loci; filtered 511 loci; 513 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01016487.1: analyzed 2 loci; filtered 142 loci; 144 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01016527.1: analyzed 4 loci; filtered 500 loci; 504 loci seen.
+    390 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01016547.1: analyzed 2 loci; filtered 218 loci; 220 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01016567.1: analyzed 2 loci; filtered 45 loci; 47 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01016602.1: analyzed 2 loci; filtered 393 loci; 395 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01016611.1: analyzed 2 loci; filtered 124 loci; 126 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01016654.1: analyzed 2 loci; filtered 238 loci; 240 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01016740.1: analyzed 2 loci; filtered 131 loci; 133 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01016759.1: analyzed 2 loci; filtered 116 loci; 118 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01016869.1: analyzed 2 loci; filtered 179 loci; 181 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01017016.1: analyzed 2 loci; filtered 83 loci; 85 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01017118.1: analyzed 2 loci; filtered 71 loci; 73 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01017260.1: analyzed 2 loci; filtered 46 loci; 48 loci seen.
+    190 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01017347.1: analyzed 2 loci; filtered 10 loci; 12 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01017379.1: analyzed 2 loci; filtered 119 loci; 121 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01017389.1: analyzed 2 loci; filtered 269 loci; 271 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01017406.1: analyzed 2 loci; filtered 221 loci; 223 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01017421.1: analyzed 2 loci; filtered 238 loci; 240 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01017462.1: analyzed 2 loci; filtered 322 loci; 324 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01017478.1: analyzed 2 loci; filtered 150 loci; 152 loci seen.
+    199 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01017541.1: analyzed 2 loci; filtered 544 loci; 546 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01017998.1: analyzed 2 loci; filtered 438 loci; 440 loci seen.
+    148 genomic sites, of which 44 were covered by multiple loci (29.7%).
+VYZU01018052.1: analyzed 2 loci; filtered 172 loci; 174 loci seen.
+    127 genomic sites, of which 64 were covered by multiple loci (50.4%).
+VYZU01018301.1: analyzed 2 loci; filtered 222 loci; 224 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01018449.1: analyzed 3 loci; filtered 288 loci; 291 loci seen.
+    288 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01018470.1: analyzed 3 loci; filtered 342 loci; 345 loci seen.
+    287 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01018508.1: analyzed 2 loci; filtered 446 loci; 448 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01018543.1: analyzed 2 loci; filtered 268 loci; 270 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01018568.1: analyzed 2 loci; filtered 263 loci; 265 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01018621.1: analyzed 2 loci; filtered 352 loci; 354 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01018759.1: analyzed 2 loci; filtered 58 loci; 60 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01018905.1: analyzed 2 loci; filtered 196 loci; 198 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01019020.1: analyzed 2 loci; filtered 26 loci; 28 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01019089.1: analyzed 2 loci; filtered 94 loci; 96 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01019182.1: analyzed 2 loci; filtered 129 loci; 131 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01019354.1: analyzed 2 loci; filtered 361 loci; 363 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01019371.1: analyzed 3 loci; filtered 304 loci; 307 loci seen.
+    287 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01019392.1: analyzed 2 loci; filtered 527 loci; 529 loci seen.
+    207 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01019456.1: analyzed 2 loci; filtered 598 loci; 600 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01019689.1: analyzed 2 loci; filtered 117 loci; 119 loci seen.
+    198 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01019814.1: analyzed 2 loci; filtered 227 loci; 229 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01020240.1: analyzed 2 loci; filtered 193 loci; 195 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01020273.1: analyzed 2 loci; filtered 155 loci; 157 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01020287.1: analyzed 2 loci; filtered 112 loci; 114 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01020318.1: analyzed 2 loci; filtered 414 loci; 416 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01020334.1: analyzed 2 loci; filtered 174 loci; 176 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01020375.1: analyzed 2 loci; filtered 346 loci; 348 loci seen.
+    190 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01020387.1: analyzed 2 loci; filtered 203 loci; 205 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01020409.1: analyzed 2 loci; filtered 191 loci; 193 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01020475.1: analyzed 2 loci; filtered 111 loci; 113 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01020497.1: analyzed 2 loci; filtered 76 loci; 78 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01020532.1: analyzed 2 loci; filtered 69 loci; 71 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01020545.1: analyzed 2 loci; filtered 344 loci; 346 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01020746.1: analyzed 2 loci; filtered 80 loci; 82 loci seen.
+    198 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01020907.1: analyzed 2 loci; filtered 80 loci; 82 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01021060.1: analyzed 2 loci; filtered 47 loci; 49 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01021143.1: analyzed 2 loci; filtered 153 loci; 155 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01021407.1: analyzed 2 loci; filtered 57 loci; 59 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01021418.1: analyzed 2 loci; filtered 148 loci; 150 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01021439.1: analyzed 2 loci; filtered 205 loci; 207 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01021445.1: analyzed 2 loci; filtered 98 loci; 100 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01021448.1: analyzed 2 loci; filtered 228 loci; 230 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01021512.1: analyzed 2 loci; filtered 516 loci; 518 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01021546.1: analyzed 2 loci; filtered 119 loci; 121 loci seen.
+    190 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01021651.1: analyzed 2 loci; filtered 313 loci; 315 loci seen.
+    207 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01021934.1: analyzed 2 loci; filtered 283 loci; 285 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01022066.1: analyzed 2 loci; filtered 60 loci; 62 loci seen.
+    116 genomic sites, of which 88 were covered by multiple loci (75.9%).
+VYZU01022206.1: analyzed 2 loci; filtered 68 loci; 70 loci seen.
+    139 genomic sites, of which 55 were covered by multiple loci (39.6%).
+VYZU01022255.1: analyzed 2 loci; filtered 354 loci; 356 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01022293.1: analyzed 3 loci; filtered 129 loci; 132 loci seen.
+    288 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01022311.1: analyzed 2 loci; filtered 452 loci; 454 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01022344.1: analyzed 2 loci; filtered 268 loci; 270 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01022407.1: analyzed 2 loci; filtered 486 loci; 488 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01022453.1: analyzed 2 loci; filtered 535 loci; 537 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01022546.1: analyzed 2 loci; filtered 289 loci; 291 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01022654.1: analyzed 2 loci; filtered 45 loci; 47 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01022687.1: analyzed 2 loci; filtered 341 loci; 343 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01023123.1: analyzed 2 loci; filtered 150 loci; 152 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01023127.1: analyzed 2 loci; filtered 25 loci; 27 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01023183.1: analyzed 2 loci; filtered 588 loci; 590 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01023227.1: analyzed 2 loci; filtered 521 loci; 523 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01023267.1: analyzed 2 loci; filtered 346 loci; 348 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01023290.1: analyzed 3 loci; filtered 125 loci; 128 loci seen.
+    288 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01023539.1: analyzed 2 loci; filtered 349 loci; 351 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01023649.1: analyzed 2 loci; filtered 104 loci; 106 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01023786.1: analyzed 2 loci; filtered 50 loci; 52 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01023907.1: analyzed 3 loci; filtered 323 loci; 326 loci seen.
+    288 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01023917.1: analyzed 2 loci; filtered 322 loci; 324 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01023936.1: analyzed 2 loci; filtered 409 loci; 411 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01023985.1: analyzed 2 loci; filtered 100 loci; 102 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01023989.1: analyzed 2 loci; filtered 72 loci; 74 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01024073.1: analyzed 2 loci; filtered 380 loci; 382 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01024236.1: analyzed 2 loci; filtered 327 loci; 329 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01024561.1: analyzed 2 loci; filtered 17 loci; 19 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01024697.1: analyzed 3 loci; filtered 234 loci; 237 loci seen.
+    291 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01024710.1: analyzed 2 loci; filtered 165 loci; 167 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01024718.1: analyzed 2 loci; filtered 53 loci; 55 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01024729.1: analyzed 2 loci; filtered 93 loci; 95 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01024750.1: analyzed 2 loci; filtered 292 loci; 294 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01024786.1: analyzed 2 loci; filtered 532 loci; 534 loci seen.
+    203 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01024813.1: analyzed 2 loci; filtered 116 loci; 118 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01024837.1: analyzed 2 loci; filtered 165 loci; 167 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01024871.1: analyzed 2 loci; filtered 253 loci; 255 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01025138.1: analyzed 2 loci; filtered 377 loci; 379 loci seen.
+    203 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01025383.1: analyzed 2 loci; filtered 85 loci; 87 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01025562.1: analyzed 2 loci; filtered 135 loci; 137 loci seen.
+    199 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01025569.1: analyzed 2 loci; filtered 116 loci; 118 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01025583.1: analyzed 2 loci; filtered 221 loci; 223 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01025618.1: analyzed 2 loci; filtered 133 loci; 135 loci seen.
+    202 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01025622.1: analyzed 2 loci; filtered 74 loci; 76 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01025635.1: analyzed 2 loci; filtered 213 loci; 215 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01025655.1: analyzed 2 loci; filtered 42 loci; 44 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01025669.1: analyzed 2 loci; filtered 205 loci; 207 loci seen.
+    183 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01025685.1: analyzed 2 loci; filtered 135 loci; 137 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01025697.1: analyzed 2 loci; filtered 194 loci; 196 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01025753.1: analyzed 2 loci; filtered 103 loci; 105 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01025793.1: analyzed 2 loci; filtered 240 loci; 242 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01025862.1: analyzed 2 loci; filtered 353 loci; 355 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01026381.1: analyzed 2 loci; filtered 107 loci; 109 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01026529.1: analyzed 2 loci; filtered 82 loci; 84 loci seen.
+    197 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01026532.1: analyzed 2 loci; filtered 389 loci; 391 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01026556.1: analyzed 2 loci; filtered 390 loci; 392 loci seen.
+    206 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01026593.1: analyzed 2 loci; filtered 129 loci; 131 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01026600.1: analyzed 2 loci; filtered 479 loci; 481 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01026736.1: analyzed 2 loci; filtered 386 loci; 388 loci seen.
+    204 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01026828.1: analyzed 2 loci; filtered 148 loci; 150 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01026957.1: analyzed 3 loci; filtered 324 loci; 327 loci seen.
+    289 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01027257.1: analyzed 2 loci; filtered 71 loci; 73 loci seen.
+    162 genomic sites, of which 34 were covered by multiple loci (21.0%).
+VYZU01027420.1: analyzed 2 loci; filtered 103 loci; 105 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01027518.1: analyzed 2 loci; filtered 96 loci; 98 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01027689.1: analyzed 2 loci; filtered 437 loci; 439 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01027715.1: analyzed 2 loci; filtered 288 loci; 290 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01027723.1: analyzed 2 loci; filtered 77 loci; 79 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01027733.1: analyzed 3 loci; filtered 195 loci; 198 loci seen.
+    289 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01027746.1: analyzed 2 loci; filtered 102 loci; 104 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01027755.1: analyzed 2 loci; filtered 125 loci; 127 loci seen.
+    198 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01027771.1: analyzed 2 loci; filtered 75 loci; 77 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01027841.1: analyzed 2 loci; filtered 431 loci; 433 loci seen.
+    185 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01027877.1: analyzed 3 loci; filtered 230 loci; 233 loci seen.
+    288 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01027928.1: analyzed 2 loci; filtered 364 loci; 366 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01028295.1: analyzed 2 loci; filtered 162 loci; 164 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01028558.1: analyzed 2 loci; filtered 139 loci; 141 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01028602.1: analyzed 2 loci; filtered 237 loci; 239 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01028610.1: analyzed 2 loci; filtered 83 loci; 85 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01028617.1: analyzed 2 loci; filtered 106 loci; 108 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01028623.1: analyzed 2 loci; filtered 191 loci; 193 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01028635.1: analyzed 2 loci; filtered 156 loci; 158 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01028650.1: analyzed 2 loci; filtered 252 loci; 254 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01028666.1: analyzed 2 loci; filtered 305 loci; 307 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01028697.1: analyzed 2 loci; filtered 319 loci; 321 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01028726.1: analyzed 2 loci; filtered 95 loci; 97 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01028738.1: analyzed 2 loci; filtered 111 loci; 113 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01028766.1: analyzed 2 loci; filtered 185 loci; 187 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01028816.1: analyzed 2 loci; filtered 191 loci; 193 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01028883.1: analyzed 2 loci; filtered 92 loci; 94 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01028959.1: analyzed 2 loci; filtered 144 loci; 146 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01029223.1: analyzed 2 loci; filtered 264 loci; 266 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01029617.1: analyzed 3 loci; filtered 194 loci; 197 loci seen.
+    295 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01029639.1: analyzed 3 loci; filtered 236 loci; 239 loci seen.
+    288 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01029657.1: analyzed 2 loci; filtered 202 loci; 204 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01029667.1: analyzed 2 loci; filtered 321 loci; 323 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01029702.1: analyzed 2 loci; filtered 132 loci; 134 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01029709.1: analyzed 2 loci; filtered 76 loci; 78 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01029720.1: analyzed 2 loci; filtered 321 loci; 323 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01029760.1: analyzed 2 loci; filtered 101 loci; 103 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01029869.1: analyzed 2 loci; filtered 285 loci; 287 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01029985.1: analyzed 2 loci; filtered 48 loci; 50 loci seen.
+    143 genomic sites, of which 48 were covered by multiple loci (33.6%).
+VYZU01030357.1: analyzed 2 loci; filtered 267 loci; 269 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01030442.1: analyzed 2 loci; filtered 52 loci; 54 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01030489.1: analyzed 2 loci; filtered 490 loci; 492 loci seen.
+    190 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01030554.1: analyzed 2 loci; filtered 141 loci; 143 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01030570.1: analyzed 2 loci; filtered 217 loci; 219 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01030588.1: analyzed 2 loci; filtered 336 loci; 338 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01030628.1: analyzed 2 loci; filtered 14 loci; 16 loci seen.
+    205 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01030707.1: analyzed 2 loci; filtered 563 loci; 565 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01030765.1: analyzed 2 loci; filtered 182 loci; 184 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01030887.1: analyzed 2 loci; filtered 194 loci; 196 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01031063.1: analyzed 2 loci; filtered 113 loci; 115 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01031249.1: analyzed 2 loci; filtered 115 loci; 117 loci seen.
+    176 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01031376.1: analyzed 2 loci; filtered 56 loci; 58 loci seen.
+    161 genomic sites, of which 33 were covered by multiple loci (20.5%).
+VYZU01031392.1: analyzed 3 loci; filtered 606 loci; 609 loci seen.
+    287 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01031435.1: analyzed 2 loci; filtered 146 loci; 148 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01031440.1: analyzed 2 loci; filtered 235 loci; 237 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01031467.1: analyzed 3 loci; filtered 277 loci; 280 loci seen.
+    290 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01031484.1: analyzed 2 loci; filtered 58 loci; 60 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01031492.1: analyzed 2 loci; filtered 64 loci; 66 loci seen.
+    201 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01031500.1: analyzed 2 loci; filtered 328 loci; 330 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01031573.1: analyzed 2 loci; filtered 258 loci; 260 loci seen.
+    189 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01031627.1: analyzed 2 loci; filtered 166 loci; 168 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01031765.1: analyzed 2 loci; filtered 415 loci; 417 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01032279.1: analyzed 2 loci; filtered 5 loci; 7 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01032427.1: analyzed 2 loci; filtered 485 loci; 487 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01032467.1: analyzed 2 loci; filtered 411 loci; 413 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01032513.1: analyzed 2 loci; filtered 154 loci; 156 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01032519.1: analyzed 2 loci; filtered 170 loci; 172 loci seen.
+    176 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01032531.1: analyzed 2 loci; filtered 112 loci; 114 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01032553.1: analyzed 2 loci; filtered 159 loci; 161 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01032570.1: analyzed 2 loci; filtered 130 loci; 132 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01032627.1: analyzed 2 loci; filtered 290 loci; 292 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01032727.1: analyzed 2 loci; filtered 226 loci; 228 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01032770.1: analyzed 2 loci; filtered 39 loci; 41 loci seen.
+    179 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01032805.1: analyzed 2 loci; filtered 55 loci; 57 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01033031.1: analyzed 2 loci; filtered 134 loci; 136 loci seen.
+    182 genomic sites, of which 11 were covered by multiple loci (6.0%).
+VYZU01033231.1: analyzed 2 loci; filtered 314 loci; 316 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01033254.1: analyzed 2 loci; filtered 236 loci; 238 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01033297.1: analyzed 2 loci; filtered 287 loci; 289 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01033303.1: analyzed 2 loci; filtered 162 loci; 164 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01033408.1: analyzed 2 loci; filtered 585 loci; 587 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01033559.1: analyzed 2 loci; filtered 389 loci; 391 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01033659.1: analyzed 2 loci; filtered 119 loci; 121 loci seen.
+    109 genomic sites, of which 82 were covered by multiple loci (75.2%).
+VYZU01033778.1: analyzed 2 loci; filtered 79 loci; 81 loci seen.
+    113 genomic sites, of which 79 were covered by multiple loci (69.9%).
+VYZU01033993.1: analyzed 2 loci; filtered 467 loci; 469 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01034003.1: analyzed 2 loci; filtered 99 loci; 101 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01034012.1: analyzed 2 loci; filtered 126 loci; 128 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01034019.1: analyzed 2 loci; filtered 466 loci; 468 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01034058.1: analyzed 2 loci; filtered 705 loci; 707 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01034102.1: analyzed 2 loci; filtered 58 loci; 60 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01034145.1: analyzed 2 loci; filtered 145 loci; 147 loci seen.
+    202 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01034186.1: analyzed 2 loci; filtered 168 loci; 170 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01034223.1: analyzed 2 loci; filtered 97 loci; 99 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01034273.1: analyzed 2 loci; filtered 83 loci; 85 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01034333.1: analyzed 2 loci; filtered 88 loci; 90 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01034684.1: analyzed 2 loci; filtered 141 loci; 143 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01034776.1: analyzed 2 loci; filtered 189 loci; 191 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01034807.1: analyzed 2 loci; filtered 345 loci; 347 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01034844.1: analyzed 2 loci; filtered 167 loci; 169 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01034885.1: analyzed 2 loci; filtered 400 loci; 402 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01034909.1: analyzed 2 loci; filtered 238 loci; 240 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01035031.1: analyzed 2 loci; filtered 413 loci; 415 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01035119.1: analyzed 2 loci; filtered 72 loci; 74 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01035145.1: analyzed 2 loci; filtered 111 loci; 113 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01035677.1: analyzed 2 loci; filtered 255 loci; 257 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01035728.1: analyzed 2 loci; filtered 249 loci; 251 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01035851.1: analyzed 2 loci; filtered 234 loci; 236 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01035878.1: analyzed 2 loci; filtered 297 loci; 299 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01035899.1: analyzed 2 loci; filtered 314 loci; 316 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01035909.1: analyzed 2 loci; filtered 155 loci; 157 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01035935.1: analyzed 2 loci; filtered 203 loci; 205 loci seen.
+    200 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01035984.1: analyzed 2 loci; filtered 229 loci; 231 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01036048.1: analyzed 2 loci; filtered 166 loci; 168 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01036083.1: analyzed 2 loci; filtered 100 loci; 102 loci seen.
+    197 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01036409.1: analyzed 2 loci; filtered 564 loci; 566 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01036658.1: analyzed 2 loci; filtered 311 loci; 313 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01036912.1: analyzed 3 loci; filtered 165 loci; 168 loci seen.
+    287 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01036926.1: analyzed 2 loci; filtered 782 loci; 784 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01036988.1: analyzed 2 loci; filtered 110 loci; 112 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01037007.1: analyzed 2 loci; filtered 183 loci; 185 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01037023.1: analyzed 2 loci; filtered 234 loci; 236 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01037174.1: analyzed 2 loci; filtered 482 loci; 484 loci seen.
+    197 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01037203.1: analyzed 2 loci; filtered 28 loci; 30 loci seen.
+    197 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01037560.1: analyzed 2 loci; filtered 436 loci; 438 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01037762.1: analyzed 2 loci; filtered 306 loci; 308 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01037780.1: analyzed 2 loci; filtered 269 loci; 271 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01037805.1: analyzed 2 loci; filtered 161 loci; 163 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01037809.1: analyzed 2 loci; filtered 106 loci; 108 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01037818.1: analyzed 2 loci; filtered 266 loci; 268 loci seen.
+    189 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01037851.1: analyzed 2 loci; filtered 191 loci; 193 loci seen.
+    198 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01037906.1: analyzed 2 loci; filtered 451 loci; 453 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01038044.1: analyzed 2 loci; filtered 209 loci; 211 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01038087.1: analyzed 2 loci; filtered 110 loci; 112 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01038208.1: analyzed 2 loci; filtered 45 loci; 47 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01038261.1: analyzed 2 loci; filtered 110 loci; 112 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01038466.1: analyzed 2 loci; filtered 69 loci; 71 loci seen.
+    190 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01038733.1: analyzed 2 loci; filtered 188 loci; 190 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01038760.1: analyzed 2 loci; filtered 446 loci; 448 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01038780.1: analyzed 2 loci; filtered 446 loci; 448 loci seen.
+    203 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01038797.1: analyzed 2 loci; filtered 87 loci; 89 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01038838.1: analyzed 2 loci; filtered 336 loci; 338 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01038939.1: analyzed 2 loci; filtered 472 loci; 474 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01039069.1: analyzed 3 loci; filtered 247 loci; 250 loci seen.
+    289 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01039163.1: analyzed 2 loci; filtered 97 loci; 99 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01039214.1: analyzed 2 loci; filtered 472 loci; 474 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01039611.1: analyzed 2 loci; filtered 355 loci; 357 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01039627.1: analyzed 2 loci; filtered 190 loci; 192 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01039648.1: analyzed 2 loci; filtered 126 loci; 128 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01039667.1: analyzed 2 loci; filtered 142 loci; 144 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01039690.1: analyzed 2 loci; filtered 225 loci; 227 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01039723.1: analyzed 2 loci; filtered 183 loci; 185 loci seen.
+    200 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01039778.1: analyzed 2 loci; filtered 335 loci; 337 loci seen.
+    199 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01040254.1: analyzed 2 loci; filtered 440 loci; 442 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01040428.1: analyzed 2 loci; filtered 18 loci; 20 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01040677.1: analyzed 2 loci; filtered 249 loci; 251 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01040719.1: analyzed 2 loci; filtered 123 loci; 125 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01040732.1: analyzed 2 loci; filtered 179 loci; 181 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01040750.1: analyzed 2 loci; filtered 409 loci; 411 loci seen.
+    205 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01040773.1: analyzed 2 loci; filtered 110 loci; 112 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01040782.1: analyzed 2 loci; filtered 235 loci; 237 loci seen.
+    212 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01040815.1: analyzed 2 loci; filtered 211 loci; 213 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01040851.1: analyzed 2 loci; filtered 104 loci; 106 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01040863.1: analyzed 2 loci; filtered 159 loci; 161 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01040888.1: analyzed 2 loci; filtered 186 loci; 188 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01040939.1: analyzed 3 loci; filtered 155 loci; 158 loci seen.
+    295 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01040987.1: analyzed 2 loci; filtered 153 loci; 155 loci seen.
+    182 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01041005.1: analyzed 2 loci; filtered 78 loci; 80 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01041080.1: analyzed 2 loci; filtered 219 loci; 221 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01041382.1: analyzed 2 loci; filtered 182 loci; 184 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01041680.1: analyzed 2 loci; filtered 76 loci; 78 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01041715.1: analyzed 2 loci; filtered 309 loci; 311 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01041739.1: analyzed 3 loci; filtered 44 loci; 47 loci seen.
+    289 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01041749.1: analyzed 2 loci; filtered 172 loci; 174 loci seen.
+    205 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01041779.1: analyzed 2 loci; filtered 280 loci; 282 loci seen.
+    202 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01041786.1: analyzed 2 loci; filtered 340 loci; 342 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01041858.1: analyzed 2 loci; filtered 475 loci; 477 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01041894.1: analyzed 2 loci; filtered 118 loci; 120 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01041916.1: analyzed 2 loci; filtered 119 loci; 121 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01042049.1: analyzed 2 loci; filtered 376 loci; 378 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01042335.1: analyzed 2 loci; filtered 272 loci; 274 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01042472.1: analyzed 2 loci; filtered 716 loci; 718 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01042492.1: analyzed 2 loci; filtered 132 loci; 134 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01042496.1: analyzed 2 loci; filtered 154 loci; 156 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01042519.1: analyzed 2 loci; filtered 216 loci; 218 loci seen.
+    200 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01042583.1: analyzed 2 loci; filtered 140 loci; 142 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01042605.1: analyzed 2 loci; filtered 129 loci; 131 loci seen.
+    190 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01042734.1: analyzed 2 loci; filtered 169 loci; 171 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01042778.1: analyzed 2 loci; filtered 70 loci; 72 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01043059.1: analyzed 2 loci; filtered 152 loci; 154 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01043236.1: analyzed 3 loci; filtered 88 loci; 91 loci seen.
+    290 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01043342.1: analyzed 2 loci; filtered 465 loci; 467 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01043352.1: analyzed 2 loci; filtered 143 loci; 145 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01043370.1: analyzed 2 loci; filtered 388 loci; 390 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01043390.1: analyzed 2 loci; filtered 133 loci; 135 loci seen.
+    189 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01043429.1: analyzed 2 loci; filtered 294 loci; 296 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01043529.1: analyzed 2 loci; filtered 244 loci; 246 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01043555.1: analyzed 2 loci; filtered 160 loci; 162 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01043628.1: analyzed 2 loci; filtered 28 loci; 30 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01043642.1: analyzed 2 loci; filtered 80 loci; 82 loci seen.
+    198 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01043696.1: analyzed 2 loci; filtered 147 loci; 149 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01043852.1: analyzed 2 loci; filtered 103 loci; 105 loci seen.
+    174 genomic sites, of which 19 were covered by multiple loci (10.9%).
+VYZU01044330.1: analyzed 2 loci; filtered 361 loci; 363 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01044337.1: analyzed 2 loci; filtered 109 loci; 111 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01044343.1: analyzed 2 loci; filtered 51 loci; 53 loci seen.
+    203 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01044360.1: analyzed 2 loci; filtered 532 loci; 534 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01044395.1: analyzed 3 loci; filtered 199 loci; 202 loci seen.
+    289 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01044415.1: analyzed 2 loci; filtered 70 loci; 72 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01044436.1: analyzed 2 loci; filtered 548 loci; 550 loci seen.
+    214 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01044526.1: analyzed 2 loci; filtered 118 loci; 120 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01044706.1: analyzed 2 loci; filtered 433 loci; 435 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01044767.1: analyzed 2 loci; filtered 68 loci; 70 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01044846.1: analyzed 2 loci; filtered 193 loci; 195 loci seen.
+    99 genomic sites, of which 94 were covered by multiple loci (94.9%).
+VYZU01045199.1: analyzed 2 loci; filtered 390 loci; 392 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01045296.1: analyzed 2 loci; filtered 569 loci; 571 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01045348.1: analyzed 2 loci; filtered 178 loci; 180 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01045354.1: analyzed 2 loci; filtered 76 loci; 78 loci seen.
+    198 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01045360.1: analyzed 2 loci; filtered 365 loci; 367 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01045433.1: analyzed 2 loci; filtered 256 loci; 258 loci seen.
+    198 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01045469.1: analyzed 2 loci; filtered 124 loci; 126 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01045481.1: analyzed 2 loci; filtered 138 loci; 140 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01045560.1: analyzed 2 loci; filtered 29 loci; 31 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01045719.1: analyzed 2 loci; filtered 226 loci; 228 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01046128.1: analyzed 2 loci; filtered 514 loci; 516 loci seen.
+    175 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01046155.1: analyzed 2 loci; filtered 47 loci; 49 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01046165.1: analyzed 2 loci; filtered 342 loci; 344 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01046245.1: analyzed 2 loci; filtered 685 loci; 687 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01046365.1: analyzed 2 loci; filtered 250 loci; 252 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01046389.1: analyzed 2 loci; filtered 101 loci; 103 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01046431.1: analyzed 2 loci; filtered 270 loci; 272 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01046867.1: analyzed 2 loci; filtered 480 loci; 482 loci seen.
+    207 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01047035.1: analyzed 2 loci; filtered 80 loci; 82 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01047067.1: analyzed 2 loci; filtered 355 loci; 357 loci seen.
+    204 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01047078.1: analyzed 2 loci; filtered 577 loci; 579 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01047120.1: analyzed 2 loci; filtered 165 loci; 167 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01047153.1: analyzed 2 loci; filtered 181 loci; 183 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01047162.1: analyzed 3 loci; filtered 152 loci; 155 loci seen.
+    285 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01047191.1: analyzed 2 loci; filtered 141 loci; 143 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01047202.1: analyzed 2 loci; filtered 172 loci; 174 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01047255.1: analyzed 2 loci; filtered 149 loci; 151 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01047321.1: analyzed 2 loci; filtered 266 loci; 268 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01047439.1: analyzed 2 loci; filtered 208 loci; 210 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01047663.1: analyzed 2 loci; filtered 67 loci; 69 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01047749.1: analyzed 2 loci; filtered 104 loci; 106 loci seen.
+    197 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01048001.1: analyzed 2 loci; filtered 99 loci; 101 loci seen.
+    188 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01048147.1: analyzed 3 loci; filtered 224 loci; 227 loci seen.
+    293 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01048159.1: analyzed 3 loci; filtered 483 loci; 486 loci seen.
+    294 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01048209.1: analyzed 2 loci; filtered 60 loci; 62 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01048215.1: analyzed 3 loci; filtered 142 loci; 145 loci seen.
+    290 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01048230.1: analyzed 2 loci; filtered 402 loci; 404 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01048281.1: analyzed 2 loci; filtered 82 loci; 84 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01048285.1: analyzed 2 loci; filtered 31 loci; 33 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01048294.1: analyzed 2 loci; filtered 237 loci; 239 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01048354.1: analyzed 2 loci; filtered 448 loci; 450 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01048524.1: analyzed 2 loci; filtered 38 loci; 40 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01048628.1: analyzed 2 loci; filtered 187 loci; 189 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01048721.1: analyzed 2 loci; filtered 91 loci; 93 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01048878.1: analyzed 2 loci; filtered 189 loci; 191 loci seen.
+    187 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01049052.1: analyzed 2 loci; filtered 276 loci; 278 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01049066.1: analyzed 2 loci; filtered 62 loci; 64 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01049076.1: analyzed 2 loci; filtered 122 loci; 124 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01049089.1: analyzed 2 loci; filtered 167 loci; 169 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01049114.1: analyzed 2 loci; filtered 196 loci; 198 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01049121.1: analyzed 2 loci; filtered 56 loci; 58 loci seen.
+    205 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01049135.1: analyzed 2 loci; filtered 204 loci; 206 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01049144.1: analyzed 2 loci; filtered 133 loci; 135 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01049154.1: analyzed 2 loci; filtered 66 loci; 68 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01049179.1: analyzed 2 loci; filtered 78 loci; 80 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01049193.1: analyzed 2 loci; filtered 125 loci; 127 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01049251.1: analyzed 2 loci; filtered 172 loci; 174 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01049274.1: analyzed 2 loci; filtered 150 loci; 152 loci seen.
+    204 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01049308.1: analyzed 2 loci; filtered 127 loci; 129 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01049334.1: analyzed 2 loci; filtered 31 loci; 33 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01049623.1: analyzed 2 loci; filtered 177 loci; 179 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01049816.1: analyzed 2 loci; filtered 97 loci; 99 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01050013.1: analyzed 2 loci; filtered 480 loci; 482 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01050025.1: analyzed 2 loci; filtered 255 loci; 257 loci seen.
+    207 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01050049.1: analyzed 2 loci; filtered 56 loci; 58 loci seen.
+    197 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01050062.1: analyzed 2 loci; filtered 137 loci; 139 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01050082.1: analyzed 2 loci; filtered 355 loci; 357 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01050133.1: analyzed 2 loci; filtered 414 loci; 416 loci seen.
+    202 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01050197.1: analyzed 2 loci; filtered 222 loci; 224 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01050254.1: analyzed 2 loci; filtered 172 loci; 174 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01050412.1: analyzed 2 loci; filtered 134 loci; 136 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01050720.1: analyzed 2 loci; filtered 158 loci; 160 loci seen.
+    209 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01050916.1: analyzed 2 loci; filtered 71 loci; 73 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01051016.1: analyzed 2 loci; filtered 83 loci; 85 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01051030.1: analyzed 2 loci; filtered 370 loci; 372 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01051048.1: analyzed 2 loci; filtered 231 loci; 233 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01051086.1: analyzed 2 loci; filtered 315 loci; 317 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01051111.1: analyzed 2 loci; filtered 269 loci; 271 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01051145.1: analyzed 2 loci; filtered 783 loci; 785 loci seen.
+    190 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01051443.1: analyzed 2 loci; filtered 112 loci; 114 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01051715.1: analyzed 2 loci; filtered 171 loci; 173 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01052085.1: analyzed 2 loci; filtered 267 loci; 269 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01052089.1: analyzed 2 loci; filtered 114 loci; 116 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01052110.1: analyzed 2 loci; filtered 385 loci; 387 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01052113.1: analyzed 2 loci; filtered 156 loci; 158 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01052120.1: analyzed 2 loci; filtered 289 loci; 291 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01052150.1: analyzed 2 loci; filtered 209 loci; 211 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01052222.1: analyzed 2 loci; filtered 281 loci; 283 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01052261.1: analyzed 2 loci; filtered 173 loci; 175 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01052331.1: analyzed 2 loci; filtered 238 loci; 240 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01052783.1: analyzed 2 loci; filtered 86 loci; 88 loci seen.
+    190 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01052820.1: analyzed 2 loci; filtered 650 loci; 652 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01052839.1: analyzed 2 loci; filtered 264 loci; 266 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01052865.1: analyzed 2 loci; filtered 251 loci; 253 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01052877.1: analyzed 3 loci; filtered 206 loci; 209 loci seen.
+    288 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01052913.1: analyzed 2 loci; filtered 99 loci; 101 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01052917.1: analyzed 2 loci; filtered 62 loci; 64 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01052947.1: analyzed 2 loci; filtered 165 loci; 167 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01052983.1: analyzed 2 loci; filtered 131 loci; 133 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01053010.1: analyzed 2 loci; filtered 156 loci; 158 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01053072.1: analyzed 2 loci; filtered 280 loci; 282 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01053572.1: analyzed 2 loci; filtered 302 loci; 304 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01053740.1: analyzed 2 loci; filtered 262 loci; 264 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01053787.1: analyzed 2 loci; filtered 646 loci; 648 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01053811.1: analyzed 2 loci; filtered 311 loci; 313 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01053838.1: analyzed 2 loci; filtered 147 loci; 149 loci seen.
+    198 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01053879.1: analyzed 2 loci; filtered 164 loci; 166 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01053927.1: analyzed 2 loci; filtered 558 loci; 560 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01054090.1: analyzed 2 loci; filtered 220 loci; 222 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01054181.1: analyzed 2 loci; filtered 73 loci; 75 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01054223.1: analyzed 2 loci; filtered 73 loci; 75 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01054361.1: analyzed 2 loci; filtered 78 loci; 80 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01054499.1: analyzed 2 loci; filtered 46 loci; 48 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01054503.1: analyzed 2 loci; filtered 181 loci; 183 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01054523.1: analyzed 2 loci; filtered 137 loci; 139 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01054529.1: analyzed 2 loci; filtered 134 loci; 136 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01054544.1: analyzed 2 loci; filtered 163 loci; 165 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01054567.1: analyzed 2 loci; filtered 212 loci; 214 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01054577.1: analyzed 2 loci; filtered 411 loci; 413 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01054624.1: analyzed 2 loci; filtered 170 loci; 172 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01054658.1: analyzed 2 loci; filtered 192 loci; 194 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01054703.1: analyzed 2 loci; filtered 178 loci; 180 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01054753.1: analyzed 2 loci; filtered 76 loci; 78 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01054764.1: analyzed 2 loci; filtered 96 loci; 98 loci seen.
+    197 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01054808.1: analyzed 2 loci; filtered 41 loci; 43 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01054910.1: analyzed 2 loci; filtered 215 loci; 217 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01055261.1: analyzed 2 loci; filtered 87 loci; 89 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01055361.1: analyzed 2 loci; filtered 214 loci; 216 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01055368.1: analyzed 2 loci; filtered 115 loci; 117 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01055378.1: analyzed 2 loci; filtered 313 loci; 315 loci seen.
+    190 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01055435.1: analyzed 2 loci; filtered 785 loci; 787 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01055493.1: analyzed 2 loci; filtered 159 loci; 161 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01055503.1: analyzed 3 loci; filtered 76 loci; 79 loci seen.
+    290 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01055619.1: analyzed 2 loci; filtered 284 loci; 286 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01055736.1: analyzed 2 loci; filtered 146 loci; 148 loci seen.
+    190 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01055827.1: analyzed 2 loci; filtered 138 loci; 140 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01056104.1: analyzed 4 loci; filtered 456 loci; 460 loci seen.
+    385 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01056132.1: analyzed 2 loci; filtered 606 loci; 608 loci seen.
+    188 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01056216.1: analyzed 2 loci; filtered 713 loci; 715 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01056240.1: analyzed 2 loci; filtered 134 loci; 136 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01056261.1: analyzed 2 loci; filtered 240 loci; 242 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01056271.1: analyzed 2 loci; filtered 55 loci; 57 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01056279.1: analyzed 2 loci; filtered 307 loci; 309 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01056450.1: analyzed 2 loci; filtered 171 loci; 173 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01056665.1: analyzed 2 loci; filtered 210 loci; 212 loci seen.
+    215 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01056723.1: analyzed 2 loci; filtered 43 loci; 45 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01056796.1: analyzed 2 loci; filtered 20 loci; 22 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01056804.1: analyzed 2 loci; filtered 259 loci; 261 loci seen.
+    197 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01056841.1: analyzed 2 loci; filtered 202 loci; 204 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01056856.1: analyzed 2 loci; filtered 242 loci; 244 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01056898.1: analyzed 2 loci; filtered 600 loci; 602 loci seen.
+    197 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01056938.1: analyzed 2 loci; filtered 43 loci; 45 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01056950.1: analyzed 2 loci; filtered 214 loci; 216 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01057019.1: analyzed 2 loci; filtered 231 loci; 233 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01057140.1: analyzed 2 loci; filtered 238 loci; 240 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01057386.1: analyzed 2 loci; filtered 127 loci; 129 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01057545.1: analyzed 2 loci; filtered 376 loci; 378 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01057615.1: analyzed 2 loci; filtered 625 loci; 627 loci seen.
+    197 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01057639.1: analyzed 2 loci; filtered 268 loci; 270 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01057688.1: analyzed 2 loci; filtered 82 loci; 84 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01057737.1: analyzed 2 loci; filtered 250 loci; 252 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01057946.1: analyzed 2 loci; filtered 330 loci; 332 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01057977.1: analyzed 2 loci; filtered 182 loci; 184 loci seen.
+    200 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01058290.1: analyzed 2 loci; filtered 66 loci; 68 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01058362.1: analyzed 2 loci; filtered 66 loci; 68 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01058468.1: analyzed 2 loci; filtered 118 loci; 120 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01058716.1: analyzed 2 loci; filtered 44 loci; 46 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01058836.1: analyzed 2 loci; filtered 159 loci; 161 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01058869.1: analyzed 2 loci; filtered 425 loci; 427 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01058904.1: analyzed 2 loci; filtered 280 loci; 282 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01058939.1: analyzed 2 loci; filtered 450 loci; 452 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01059193.1: analyzed 2 loci; filtered 641 loci; 643 loci seen.
+    197 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01059351.1: analyzed 2 loci; filtered 167 loci; 169 loci seen.
+    200 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01059522.1: analyzed 2 loci; filtered 80 loci; 82 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01059640.1: analyzed 2 loci; filtered 452 loci; 454 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01059652.1: analyzed 2 loci; filtered 85 loci; 87 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01059663.1: analyzed 3 loci; filtered 75 loci; 78 loci seen.
+    307 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01059670.1: analyzed 2 loci; filtered 213 loci; 215 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01059719.1: analyzed 2 loci; filtered 233 loci; 235 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01059733.1: analyzed 2 loci; filtered 558 loci; 560 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01059781.1: analyzed 2 loci; filtered 92 loci; 94 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01059817.1: analyzed 2 loci; filtered 392 loci; 394 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01059937.1: analyzed 2 loci; filtered 321 loci; 323 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01060155.1: analyzed 2 loci; filtered 174 loci; 176 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01060460.1: analyzed 2 loci; filtered 167 loci; 169 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01060536.1: analyzed 2 loci; filtered 117 loci; 119 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01060826.1: analyzed 2 loci; filtered 159 loci; 161 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01060873.1: analyzed 2 loci; filtered 188 loci; 190 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01060897.1: analyzed 2 loci; filtered 643 loci; 645 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01060926.1: analyzed 2 loci; filtered 148 loci; 150 loci seen.
+    208 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01060962.1: analyzed 3 loci; filtered 382 loci; 385 loci seen.
+    288 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01061035.1: analyzed 2 loci; filtered 283 loci; 285 loci seen.
+    207 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01061177.1: analyzed 2 loci; filtered 263 loci; 265 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01061228.1: analyzed 2 loci; filtered 191 loci; 193 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01061650.1: analyzed 2 loci; filtered 219 loci; 221 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01061682.1: analyzed 2 loci; filtered 336 loci; 338 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01061691.1: analyzed 2 loci; filtered 75 loci; 77 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01061707.1: analyzed 2 loci; filtered 141 loci; 143 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01061715.1: analyzed 2 loci; filtered 90 loci; 92 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01061721.1: analyzed 4 loci; filtered 216 loci; 220 loci seen.
+    388 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01061750.1: analyzed 2 loci; filtered 214 loci; 216 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01061765.1: analyzed 2 loci; filtered 243 loci; 245 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01061887.1: analyzed 2 loci; filtered 234 loci; 236 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01061933.1: analyzed 2 loci; filtered 171 loci; 173 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01062059.1: analyzed 2 loci; filtered 191 loci; 193 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01062428.1: analyzed 2 loci; filtered 467 loci; 469 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01062442.1: analyzed 2 loci; filtered 191 loci; 193 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01062458.1: analyzed 2 loci; filtered 155 loci; 157 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01062484.1: analyzed 2 loci; filtered 320 loci; 322 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01062497.1: analyzed 2 loci; filtered 203 loci; 205 loci seen.
+    198 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01062517.1: analyzed 2 loci; filtered 190 loci; 192 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01062531.1: analyzed 2 loci; filtered 105 loci; 107 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01062549.1: analyzed 2 loci; filtered 183 loci; 185 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01062590.1: analyzed 2 loci; filtered 237 loci; 239 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01062669.1: analyzed 2 loci; filtered 575 loci; 577 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01062797.1: analyzed 2 loci; filtered 282 loci; 284 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01062877.1: analyzed 2 loci; filtered 200 loci; 202 loci seen.
+    202 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01063581.1: analyzed 2 loci; filtered 250 loci; 252 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01063632.1: analyzed 3 loci; filtered 359 loci; 362 loci seen.
+    288 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01063656.1: analyzed 3 loci; filtered 191 loci; 194 loci seen.
+    288 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01063664.1: analyzed 2 loci; filtered 116 loci; 118 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01063666.1: analyzed 2 loci; filtered 60 loci; 62 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01063707.1: analyzed 3 loci; filtered 578 loci; 581 loci seen.
+    288 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01063742.1: analyzed 2 loci; filtered 196 loci; 198 loci seen.
+    188 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01063765.1: analyzed 2 loci; filtered 155 loci; 157 loci seen.
+    215 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01063773.1: analyzed 2 loci; filtered 191 loci; 193 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01063854.1: analyzed 2 loci; filtered 130 loci; 132 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01063898.1: analyzed 2 loci; filtered 76 loci; 78 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01064143.1: analyzed 2 loci; filtered 261 loci; 263 loci seen.
+    198 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01064479.1: analyzed 2 loci; filtered 257 loci; 259 loci seen.
+    124 genomic sites, of which 53 were covered by multiple loci (42.7%).
+VYZU01064597.1: analyzed 2 loci; filtered 278 loci; 280 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01064625.1: analyzed 2 loci; filtered 170 loci; 172 loci seen.
+    190 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01064638.1: analyzed 2 loci; filtered 139 loci; 141 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01064645.1: analyzed 2 loci; filtered 214 loci; 216 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01064669.1: analyzed 2 loci; filtered 95 loci; 97 loci seen.
+    190 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01064690.1: analyzed 2 loci; filtered 250 loci; 252 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01064732.1: analyzed 2 loci; filtered 50 loci; 52 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01064737.1: analyzed 2 loci; filtered 37 loci; 39 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01064777.1: analyzed 2 loci; filtered 190 loci; 192 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01064800.1: analyzed 2 loci; filtered 96 loci; 98 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01064910.1: analyzed 2 loci; filtered 250 loci; 252 loci seen.
+    205 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01064956.1: analyzed 2 loci; filtered 103 loci; 105 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01065127.1: analyzed 2 loci; filtered 211 loci; 213 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01065563.1: analyzed 2 loci; filtered 199 loci; 201 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01065574.1: analyzed 3 loci; filtered 395 loci; 398 loci seen.
+    292 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01065597.1: analyzed 2 loci; filtered 253 loci; 255 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01065628.1: analyzed 2 loci; filtered 203 loci; 205 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01065652.1: analyzed 2 loci; filtered 211 loci; 213 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01065668.1: analyzed 2 loci; filtered 147 loci; 149 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01065670.1: analyzed 2 loci; filtered 214 loci; 216 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01065712.1: analyzed 2 loci; filtered 117 loci; 119 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01065738.1: analyzed 2 loci; filtered 266 loci; 268 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01065851.1: analyzed 2 loci; filtered 270 loci; 272 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01066102.1: analyzed 2 loci; filtered 100 loci; 102 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01066369.1: analyzed 2 loci; filtered 619 loci; 621 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01066395.1: analyzed 2 loci; filtered 420 loci; 422 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01066418.1: analyzed 2 loci; filtered 131 loci; 133 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01066445.1: analyzed 2 loci; filtered 283 loci; 285 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01066484.1: analyzed 2 loci; filtered 243 loci; 245 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01066501.1: analyzed 2 loci; filtered 306 loci; 308 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01066682.1: analyzed 2 loci; filtered 278 loci; 280 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01067049.1: analyzed 2 loci; filtered 308 loci; 310 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01067071.1: analyzed 2 loci; filtered 142 loci; 144 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01067091.1: analyzed 2 loci; filtered 306 loci; 308 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01067108.1: analyzed 2 loci; filtered 414 loci; 416 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01067149.1: analyzed 3 loci; filtered 398 loci; 401 loci seen.
+    289 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01067208.1: analyzed 2 loci; filtered 320 loci; 322 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01067264.1: analyzed 2 loci; filtered 144 loci; 146 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01067369.1: analyzed 2 loci; filtered 275 loci; 277 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01067579.1: analyzed 2 loci; filtered 150 loci; 152 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01067923.1: analyzed 2 loci; filtered 126 loci; 128 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01068048.1: analyzed 2 loci; filtered 319 loci; 321 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01068056.1: analyzed 2 loci; filtered 186 loci; 188 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01068075.1: analyzed 3 loci; filtered 147 loci; 150 loci seen.
+    288 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01068078.1: analyzed 2 loci; filtered 94 loci; 96 loci seen.
+    198 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01068142.1: analyzed 2 loci; filtered 492 loci; 494 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01068185.1: analyzed 2 loci; filtered 50 loci; 52 loci seen.
+    199 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01068189.1: analyzed 2 loci; filtered 63 loci; 65 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01068204.1: analyzed 2 loci; filtered 160 loci; 162 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01068428.1: analyzed 2 loci; filtered 293 loci; 295 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01068602.1: analyzed 2 loci; filtered 42 loci; 44 loci seen.
+    200 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01068722.1: analyzed 2 loci; filtered 294 loci; 296 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01068899.1: analyzed 2 loci; filtered 416 loci; 418 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01068933.1: analyzed 2 loci; filtered 391 loci; 393 loci seen.
+    197 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01068956.1: analyzed 2 loci; filtered 355 loci; 357 loci seen.
+    201 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01069013.1: analyzed 2 loci; filtered 66 loci; 68 loci seen.
+    190 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01069021.1: analyzed 2 loci; filtered 67 loci; 69 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01069056.1: analyzed 2 loci; filtered 277 loci; 279 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01069299.1: analyzed 2 loci; filtered 252 loci; 254 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01069676.1: analyzed 2 loci; filtered 432 loci; 434 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01069891.1: analyzed 2 loci; filtered 211 loci; 213 loci seen.
+    203 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01069908.1: analyzed 2 loci; filtered 337 loci; 339 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01069928.1: analyzed 2 loci; filtered 225 loci; 227 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01069948.1: analyzed 2 loci; filtered 52 loci; 54 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01069950.1: analyzed 2 loci; filtered 109 loci; 111 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01069965.1: analyzed 3 loci; filtered 227 loci; 230 loci seen.
+    287 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01070005.1: analyzed 2 loci; filtered 238 loci; 240 loci seen.
+    190 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01070035.1: analyzed 2 loci; filtered 142 loci; 144 loci seen.
+    200 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01070058.1: analyzed 2 loci; filtered 138 loci; 140 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01070102.1: analyzed 3 loci; filtered 286 loci; 289 loci seen.
+    287 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01070299.1: analyzed 2 loci; filtered 438 loci; 440 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01070453.1: analyzed 2 loci; filtered 130 loci; 132 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01070524.1: analyzed 2 loci; filtered 83 loci; 85 loci seen.
+    187 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01070717.1: analyzed 2 loci; filtered 193 loci; 195 loci seen.
+    190 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01070763.1: analyzed 2 loci; filtered 153 loci; 155 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01070786.1: analyzed 2 loci; filtered 115 loci; 117 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01070791.1: analyzed 2 loci; filtered 102 loci; 104 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01070830.1: analyzed 2 loci; filtered 574 loci; 576 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01070868.1: analyzed 2 loci; filtered 203 loci; 205 loci seen.
+    201 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01070917.1: analyzed 3 loci; filtered 218 loci; 221 loci seen.
+    292 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01070959.1: analyzed 2 loci; filtered 348 loci; 350 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01071512.1: analyzed 2 loci; filtered 531 loci; 533 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01071889.1: analyzed 2 loci; filtered 504 loci; 506 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01071926.1: analyzed 2 loci; filtered 86 loci; 88 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01071946.1: analyzed 2 loci; filtered 167 loci; 169 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01071978.1: analyzed 2 loci; filtered 252 loci; 254 loci seen.
+    197 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01072000.1: analyzed 2 loci; filtered 458 loci; 460 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01072102.1: analyzed 2 loci; filtered 60 loci; 62 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01072161.1: analyzed 3 loci; filtered 430 loci; 433 loci seen.
+    287 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01072852.1: analyzed 2 loci; filtered 488 loci; 490 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01072858.1: analyzed 2 loci; filtered 67 loci; 69 loci seen.
+    190 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01072874.1: analyzed 2 loci; filtered 261 loci; 263 loci seen.
+    190 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01072881.1: analyzed 2 loci; filtered 183 loci; 185 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01072920.1: analyzed 2 loci; filtered 911 loci; 913 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01072969.1: analyzed 2 loci; filtered 146 loci; 148 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01073008.1: analyzed 2 loci; filtered 201 loci; 203 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01073142.1: analyzed 2 loci; filtered 395 loci; 397 loci seen.
+    214 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01073469.1: analyzed 2 loci; filtered 192 loci; 194 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01073667.1: analyzed 2 loci; filtered 105 loci; 107 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01073789.1: analyzed 2 loci; filtered 175 loci; 177 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01073817.1: analyzed 2 loci; filtered 86 loci; 88 loci seen.
+    201 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01073842.1: analyzed 2 loci; filtered 379 loci; 381 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01073855.1: analyzed 2 loci; filtered 45 loci; 47 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01073870.1: analyzed 2 loci; filtered 243 loci; 245 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01073934.1: analyzed 2 loci; filtered 417 loci; 419 loci seen.
+    200 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01074048.1: analyzed 2 loci; filtered 447 loci; 449 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01074115.1: analyzed 2 loci; filtered 89 loci; 91 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01074211.1: analyzed 2 loci; filtered 112 loci; 114 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01074360.1: analyzed 2 loci; filtered 249 loci; 251 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01074580.1: analyzed 2 loci; filtered 34 loci; 36 loci seen.
+    105 genomic sites, of which 89 were covered by multiple loci (84.8%).
+VYZU01074740.1: analyzed 2 loci; filtered 544 loci; 546 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01074751.1: analyzed 2 loci; filtered 233 loci; 235 loci seen.
+    201 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01074780.1: analyzed 3 loci; filtered 159 loci; 162 loci seen.
+    287 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01074788.1: analyzed 2 loci; filtered 239 loci; 241 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01074828.1: analyzed 2 loci; filtered 120 loci; 122 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01074850.1: analyzed 2 loci; filtered 120 loci; 122 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01074882.1: analyzed 2 loci; filtered 167 loci; 169 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01074966.1: analyzed 2 loci; filtered 455 loci; 457 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01075257.1: analyzed 2 loci; filtered 115 loci; 117 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01075300.1: analyzed 2 loci; filtered 367 loci; 369 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01075766.1: analyzed 2 loci; filtered 333 loci; 335 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01075796.1: analyzed 2 loci; filtered 228 loci; 230 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01075831.1: analyzed 2 loci; filtered 296 loci; 298 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01075855.1: analyzed 2 loci; filtered 103 loci; 105 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01075904.1: analyzed 2 loci; filtered 302 loci; 304 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01075918.1: analyzed 2 loci; filtered 224 loci; 226 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01075990.1: analyzed 2 loci; filtered 287 loci; 289 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01076052.1: analyzed 2 loci; filtered 124 loci; 126 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01076239.1: analyzed 2 loci; filtered 231 loci; 233 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01076342.1: analyzed 2 loci; filtered 37 loci; 39 loci seen.
+    190 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01076416.1: analyzed 2 loci; filtered 25 loci; 27 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01076478.1: analyzed 2 loci; filtered 433 loci; 435 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01076513.1: analyzed 2 loci; filtered 421 loci; 423 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01076528.1: analyzed 2 loci; filtered 84 loci; 86 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01076605.1: analyzed 2 loci; filtered 648 loci; 650 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01076620.1: analyzed 2 loci; filtered 94 loci; 96 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01076648.1: analyzed 2 loci; filtered 356 loci; 358 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01076726.1: analyzed 2 loci; filtered 58 loci; 60 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01076800.1: analyzed 2 loci; filtered 97 loci; 99 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01076859.1: analyzed 2 loci; filtered 199 loci; 201 loci seen.
+    209 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01076920.1: analyzed 2 loci; filtered 67 loci; 69 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01076941.1: analyzed 2 loci; filtered 35 loci; 37 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01076965.1: analyzed 2 loci; filtered 9 loci; 11 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01077366.1: analyzed 2 loci; filtered 250 loci; 252 loci seen.
+    190 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01077500.1: analyzed 2 loci; filtered 483 loci; 485 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01077526.1: analyzed 2 loci; filtered 106 loci; 108 loci seen.
+    190 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01077578.1: analyzed 2 loci; filtered 316 loci; 318 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01077603.1: analyzed 2 loci; filtered 222 loci; 224 loci seen.
+    186 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01077645.1: analyzed 2 loci; filtered 168 loci; 170 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01077660.1: analyzed 2 loci; filtered 110 loci; 112 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01077733.1: analyzed 2 loci; filtered 214 loci; 216 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01077761.1: analyzed 2 loci; filtered 173 loci; 175 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01077900.1: analyzed 2 loci; filtered 148 loci; 150 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01078094.1: analyzed 2 loci; filtered 9 loci; 11 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01078179.1: analyzed 2 loci; filtered 87 loci; 89 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01078355.1: analyzed 2 loci; filtered 133 loci; 135 loci seen.
+    201 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01078471.1: analyzed 2 loci; filtered 161 loci; 163 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01078478.1: analyzed 2 loci; filtered 173 loci; 175 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01078489.1: analyzed 2 loci; filtered 199 loci; 201 loci seen.
+    197 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01078495.1: analyzed 2 loci; filtered 275 loci; 277 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01078522.1: analyzed 2 loci; filtered 197 loci; 199 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01078599.1: analyzed 2 loci; filtered 149 loci; 151 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01078614.1: analyzed 2 loci; filtered 129 loci; 131 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01078628.1: analyzed 2 loci; filtered 42 loci; 44 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01078666.1: analyzed 2 loci; filtered 110 loci; 112 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01078749.1: analyzed 2 loci; filtered 119 loci; 121 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01078791.1: analyzed 2 loci; filtered 192 loci; 194 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01079374.1: analyzed 2 loci; filtered 468 loci; 470 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01079408.1: analyzed 2 loci; filtered 191 loci; 193 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01079439.1: analyzed 2 loci; filtered 46 loci; 48 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01079455.1: analyzed 2 loci; filtered 255 loci; 257 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01079462.1: analyzed 3 loci; filtered 133 loci; 136 loci seen.
+    287 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01079469.1: analyzed 2 loci; filtered 108 loci; 110 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01079498.1: analyzed 2 loci; filtered 449 loci; 451 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01079557.1: analyzed 2 loci; filtered 174 loci; 176 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01079576.1: analyzed 2 loci; filtered 404 loci; 406 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01079657.1: analyzed 3 loci; filtered 118 loci; 121 loci seen.
+    299 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01079936.1: analyzed 2 loci; filtered 418 loci; 420 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01080080.1: analyzed 2 loci; filtered 207 loci; 209 loci seen.
+    204 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01080090.1: analyzed 2 loci; filtered 377 loci; 379 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01080122.1: analyzed 2 loci; filtered 40 loci; 42 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01080137.1: analyzed 2 loci; filtered 250 loci; 252 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01080161.1: analyzed 2 loci; filtered 199 loci; 201 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01080180.1: analyzed 2 loci; filtered 109 loci; 111 loci seen.
+    197 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01080191.1: analyzed 2 loci; filtered 93 loci; 95 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01080197.1: analyzed 2 loci; filtered 215 loci; 217 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01080267.1: analyzed 2 loci; filtered 260 loci; 262 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01080273.1: analyzed 2 loci; filtered 39 loci; 41 loci seen.
+    190 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01080306.1: analyzed 2 loci; filtered 141 loci; 143 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01080322.1: analyzed 2 loci; filtered 137 loci; 139 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01080563.1: analyzed 2 loci; filtered 116 loci; 118 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01080911.1: analyzed 2 loci; filtered 362 loci; 364 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01080973.1: analyzed 2 loci; filtered 181 loci; 183 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01080980.1: analyzed 2 loci; filtered 91 loci; 93 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01081009.1: analyzed 2 loci; filtered 242 loci; 244 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01081033.1: analyzed 2 loci; filtered 207 loci; 209 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01081068.1: analyzed 2 loci; filtered 278 loci; 280 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01081089.1: analyzed 2 loci; filtered 154 loci; 156 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01081103.1: analyzed 2 loci; filtered 262 loci; 264 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01081156.1: analyzed 2 loci; filtered 226 loci; 228 loci seen.
+    190 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01081557.1: analyzed 2 loci; filtered 237 loci; 239 loci seen.
+    142 genomic sites, of which 53 were covered by multiple loci (37.3%).
+VYZU01081989.1: analyzed 2 loci; filtered 340 loci; 342 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01081997.1: analyzed 2 loci; filtered 118 loci; 120 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01082031.1: analyzed 3 loci; filtered 420 loci; 423 loci seen.
+    289 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01082049.1: analyzed 2 loci; filtered 252 loci; 254 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01082102.1: analyzed 2 loci; filtered 196 loci; 198 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01082142.1: analyzed 2 loci; filtered 417 loci; 419 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01082193.1: analyzed 2 loci; filtered 91 loci; 93 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01082207.1: analyzed 2 loci; filtered 22 loci; 24 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01082277.1: analyzed 2 loci; filtered 216 loci; 218 loci seen.
+    207 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01082444.1: analyzed 2 loci; filtered 163 loci; 165 loci seen.
+    207 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01082971.1: analyzed 2 loci; filtered 528 loci; 530 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01083074.1: analyzed 2 loci; filtered 334 loci; 336 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01083130.1: analyzed 2 loci; filtered 613 loci; 615 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01083145.1: analyzed 2 loci; filtered 76 loci; 78 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01083154.1: analyzed 2 loci; filtered 146 loci; 148 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01083247.1: analyzed 2 loci; filtered 375 loci; 377 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01083366.1: analyzed 2 loci; filtered 84 loci; 86 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01083373.1: analyzed 2 loci; filtered 100 loci; 102 loci seen.
+    197 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01083792.1: analyzed 2 loci; filtered 302 loci; 304 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01083802.1: analyzed 2 loci; filtered 277 loci; 279 loci seen.
+    201 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01083820.1: analyzed 2 loci; filtered 437 loci; 439 loci seen.
+    197 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01083898.1: analyzed 2 loci; filtered 268 loci; 270 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01083921.1: analyzed 2 loci; filtered 427 loci; 429 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01084020.1: analyzed 2 loci; filtered 109 loci; 111 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01084120.1: analyzed 2 loci; filtered 239 loci; 241 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01084192.1: analyzed 2 loci; filtered 202 loci; 204 loci seen.
+    177 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01084616.1: analyzed 2 loci; filtered 166 loci; 168 loci seen.
+    188 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01084761.1: analyzed 2 loci; filtered 27 loci; 29 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01084856.1: analyzed 2 loci; filtered 88 loci; 90 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01084930.1: analyzed 3 loci; filtered 114 loci; 117 loci seen.
+    291 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01084944.1: analyzed 2 loci; filtered 340 loci; 342 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01084950.1: analyzed 2 loci; filtered 261 loci; 263 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01084976.1: analyzed 2 loci; filtered 158 loci; 160 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01084989.1: analyzed 2 loci; filtered 312 loci; 314 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01085018.1: analyzed 2 loci; filtered 167 loci; 169 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01085041.1: analyzed 2 loci; filtered 168 loci; 170 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01085049.1: analyzed 2 loci; filtered 136 loci; 138 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01085210.1: analyzed 2 loci; filtered 517 loci; 519 loci seen.
+    201 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01085290.1: analyzed 2 loci; filtered 329 loci; 331 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01085921.1: analyzed 2 loci; filtered 243 loci; 245 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01085927.1: analyzed 2 loci; filtered 207 loci; 209 loci seen.
+    199 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01085950.1: analyzed 2 loci; filtered 152 loci; 154 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01085956.1: analyzed 2 loci; filtered 112 loci; 114 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01085989.1: analyzed 2 loci; filtered 208 loci; 210 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01086008.1: analyzed 2 loci; filtered 264 loci; 266 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01086032.1: analyzed 2 loci; filtered 328 loci; 330 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01086090.1: analyzed 2 loci; filtered 318 loci; 320 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01086198.1: analyzed 2 loci; filtered 294 loci; 296 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01086459.1: analyzed 2 loci; filtered 178 loci; 180 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01086528.1: analyzed 2 loci; filtered 79 loci; 81 loci seen.
+    197 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01086782.1: analyzed 2 loci; filtered 183 loci; 185 loci seen.
+    116 genomic sites, of which 76 were covered by multiple loci (65.5%).
+VYZU01086990.1: analyzed 3 loci; filtered 110 loci; 113 loci seen.
+    294 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01086992.1: analyzed 2 loci; filtered 47 loci; 49 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01086999.1: analyzed 2 loci; filtered 65 loci; 67 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01087007.1: analyzed 2 loci; filtered 206 loci; 208 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01087032.1: analyzed 2 loci; filtered 236 loci; 238 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01087047.1: analyzed 2 loci; filtered 382 loci; 384 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01087073.1: analyzed 2 loci; filtered 180 loci; 182 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01087089.1: analyzed 2 loci; filtered 90 loci; 92 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01087146.1: analyzed 2 loci; filtered 269 loci; 271 loci seen.
+    190 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01087346.1: analyzed 2 loci; filtered 337 loci; 339 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01087373.1: analyzed 2 loci; filtered 36 loci; 38 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01087402.1: analyzed 2 loci; filtered 22 loci; 24 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01087600.1: analyzed 2 loci; filtered 258 loci; 260 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01087780.1: analyzed 2 loci; filtered 273 loci; 275 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01087829.1: analyzed 2 loci; filtered 385 loci; 387 loci seen.
+    186 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01087860.1: analyzed 2 loci; filtered 445 loci; 447 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01087894.1: analyzed 2 loci; filtered 642 loci; 644 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01087994.1: analyzed 2 loci; filtered 109 loci; 111 loci seen.
+    221 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01088120.1: analyzed 2 loci; filtered 340 loci; 342 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01088205.1: analyzed 2 loci; filtered 429 loci; 431 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01088723.1: analyzed 2 loci; filtered 73 loci; 75 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01088739.1: analyzed 2 loci; filtered 535 loci; 537 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01088776.1: analyzed 2 loci; filtered 216 loci; 218 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01088802.1: analyzed 2 loci; filtered 127 loci; 129 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01088817.1: analyzed 2 loci; filtered 154 loci; 156 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01088900.1: analyzed 2 loci; filtered 673 loci; 675 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01089186.1: analyzed 2 loci; filtered 65 loci; 67 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01089283.1: analyzed 2 loci; filtered 467 loci; 469 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01089521.1: analyzed 3 loci; filtered 187 loci; 190 loci seen.
+    288 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01089529.1: analyzed 2 loci; filtered 72 loci; 74 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01089536.1: analyzed 2 loci; filtered 220 loci; 222 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01089549.1: analyzed 2 loci; filtered 90 loci; 92 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01089567.1: analyzed 2 loci; filtered 200 loci; 202 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01089578.1: analyzed 2 loci; filtered 235 loci; 237 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01089595.1: analyzed 2 loci; filtered 160 loci; 162 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01089656.1: analyzed 2 loci; filtered 379 loci; 381 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01089666.1: analyzed 2 loci; filtered 154 loci; 156 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01089690.1: analyzed 2 loci; filtered 214 loci; 216 loci seen.
+    201 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01089772.1: analyzed 2 loci; filtered 210 loci; 212 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01090028.1: analyzed 2 loci; filtered 43 loci; 45 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01090111.1: analyzed 2 loci; filtered 33 loci; 35 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01090205.1: analyzed 2 loci; filtered 193 loci; 195 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01090354.1: analyzed 2 loci; filtered 35 loci; 37 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01090385.1: analyzed 2 loci; filtered 410 loci; 412 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01090393.1: analyzed 3 loci; filtered 101 loci; 104 loci seen.
+    289 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01090398.1: analyzed 2 loci; filtered 148 loci; 150 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01090409.1: analyzed 2 loci; filtered 133 loci; 135 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01090441.1: analyzed 2 loci; filtered 348 loci; 350 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01090464.1: analyzed 2 loci; filtered 238 loci; 240 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01090516.1: analyzed 2 loci; filtered 211 loci; 213 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01090613.1: analyzed 2 loci; filtered 422 loci; 424 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01090663.1: analyzed 2 loci; filtered 230 loci; 232 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01090967.1: analyzed 2 loci; filtered 203 loci; 205 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01091211.1: analyzed 2 loci; filtered 191 loci; 193 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01091225.1: analyzed 2 loci; filtered 263 loci; 265 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01091239.1: analyzed 2 loci; filtered 147 loci; 149 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01091254.1: analyzed 2 loci; filtered 236 loci; 238 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01091292.1: analyzed 2 loci; filtered 373 loci; 375 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01091312.1: analyzed 2 loci; filtered 149 loci; 151 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01091340.1: analyzed 3 loci; filtered 90 loci; 93 loci seen.
+    274 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01091347.1: analyzed 2 loci; filtered 144 loci; 146 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01091398.1: analyzed 2 loci; filtered 326 loci; 328 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01091486.1: analyzed 2 loci; filtered 293 loci; 295 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01091775.1: analyzed 2 loci; filtered 30 loci; 32 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01091814.1: analyzed 2 loci; filtered 73 loci; 75 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01091999.1: analyzed 2 loci; filtered 174 loci; 176 loci seen.
+    124 genomic sites, of which 72 were covered by multiple loci (58.1%).
+VYZU01092194.1: analyzed 2 loci; filtered 87 loci; 89 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01092535.1: analyzed 2 loci; filtered 90 loci; 92 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01092723.1: analyzed 2 loci; filtered 45 loci; 47 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01092961.1: analyzed 2 loci; filtered 131 loci; 133 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01093616.1: analyzed 2 loci; filtered 224 loci; 226 loci seen.
+    147 genomic sites, of which 47 were covered by multiple loci (32.0%).
+VYZU01094030.1: analyzed 2 loci; filtered 173 loci; 175 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01094597.1: analyzed 2 loci; filtered 139 loci; 141 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01096119.1: analyzed 2 loci; filtered 586 loci; 588 loci seen.
+    188 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01097308.1: analyzed 2 loci; filtered 236 loci; 238 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01097818.1: analyzed 2 loci; filtered 11 loci; 13 loci seen.
+    202 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01098274.1: analyzed 2 loci; filtered 208 loci; 210 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01098884.1: analyzed 2 loci; filtered 99 loci; 101 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01099094.1: analyzed 2 loci; filtered 106 loci; 108 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01099466.1: analyzed 2 loci; filtered 162 loci; 164 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01100197.1: analyzed 2 loci; filtered 102 loci; 104 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01100485.1: analyzed 2 loci; filtered 83 loci; 85 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01100677.1: analyzed 2 loci; filtered 88 loci; 90 loci seen.
+    197 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01101128.1: analyzed 2 loci; filtered 90 loci; 92 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01101619.1: analyzed 2 loci; filtered 311 loci; 313 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01102251.1: analyzed 2 loci; filtered 122 loci; 124 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01103646.1: analyzed 2 loci; filtered 284 loci; 286 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01104676.1: analyzed 2 loci; filtered 404 loci; 406 loci seen.
+    200 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01105519.1: analyzed 2 loci; filtered 39 loci; 41 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01105706.1: analyzed 2 loci; filtered 71 loci; 73 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01106178.1: analyzed 2 loci; filtered 112 loci; 114 loci seen.
+    201 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01106368.1: analyzed 2 loci; filtered 178 loci; 180 loci seen.
+    190 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01107219.1: analyzed 2 loci; filtered 59 loci; 61 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01107705.1: analyzed 2 loci; filtered 120 loci; 122 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01108931.1: analyzed 2 loci; filtered 308 loci; 310 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01109239.1: analyzed 2 loci; filtered 199 loci; 201 loci seen.
+    180 genomic sites, of which 12 were covered by multiple loci (6.7%).
+VYZU01110135.1: analyzed 2 loci; filtered 64 loci; 66 loci seen.
+    168 genomic sites, of which 32 were covered by multiple loci (19.0%).
+VYZU01110357.1: analyzed 2 loci; filtered 65 loci; 67 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01110980.1: analyzed 2 loci; filtered 222 loci; 224 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01111363.1: analyzed 2 loci; filtered 104 loci; 106 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01112012.1: analyzed 2 loci; filtered 81 loci; 83 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01112187.1: analyzed 2 loci; filtered 159 loci; 161 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01113980.1: analyzed 2 loci; filtered 405 loci; 407 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01114546.1: analyzed 2 loci; filtered 78 loci; 80 loci seen.
+    199 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01114844.1: analyzed 2 loci; filtered 199 loci; 201 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01115751.1: analyzed 2 loci; filtered 194 loci; 196 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01116604.1: analyzed 2 loci; filtered 165 loci; 167 loci seen.
+    198 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01116873.1: analyzed 2 loci; filtered 281 loci; 283 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01117840.1: analyzed 2 loci; filtered 107 loci; 109 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01118103.1: analyzed 2 loci; filtered 49 loci; 51 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01118226.1: analyzed 2 loci; filtered 396 loci; 398 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01119342.1: analyzed 2 loci; filtered 79 loci; 81 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01119381.1: analyzed 2 loci; filtered 42 loci; 44 loci seen.
+    201 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01119687.1: analyzed 2 loci; filtered 158 loci; 160 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01122520.1: analyzed 2 loci; filtered 243 loci; 245 loci seen.
+    189 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01122671.1: analyzed 2 loci; filtered 68 loci; 70 loci seen.
+    103 genomic sites, of which 90 were covered by multiple loci (87.4%).
+VYZU01128066.1: analyzed 2 loci; filtered 172 loci; 174 loci seen.
+    131 genomic sites, of which 87 were covered by multiple loci (66.4%).
+VYZU01130416.1: analyzed 2 loci; filtered 35 loci; 37 loci seen.
+    165 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01132993.1: analyzed 2 loci; filtered 142 loci; 144 loci seen.
+    107 genomic sites, of which 91 were covered by multiple loci (85.0%).
+VYZU01134245.1: analyzed 2 loci; filtered 63 loci; 65 loci seen.
+    173 genomic sites, of which 35 were covered by multiple loci (20.2%).
+VYZU01136217.1: analyzed 2 loci; filtered 7 loci; 9 loci seen.
+    154 genomic sites, of which 38 were covered by multiple loci (24.7%).
+VYZU01137053.1: analyzed 2 loci; filtered 46 loci; 48 loci seen.
+    161 genomic sites, of which 31 were covered by multiple loci (19.3%).
+VYZU01139019.1: analyzed 2 loci; filtered 132 loci; 134 loci seen.
+    101 genomic sites, of which 74 were covered by multiple loci (73.3%).
+VYZU01140344.1: analyzed 2 loci; filtered 139 loci; 141 loci seen.
+    143 genomic sites, of which 52 were covered by multiple loci (36.4%).
+VYZU01144272.1: analyzed 2 loci; filtered 28 loci; 30 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01145138.1: analyzed 2 loci; filtered 18 loci; 20 loci seen.
+    99 genomic sites, of which 93 were covered by multiple loci (93.9%).
+VYZU01146929.1: analyzed 2 loci; filtered 174 loci; 176 loci seen.
+    154 genomic sites, of which 18 were covered by multiple loci (11.7%).
+VYZU01152665.1: analyzed 2 loci; filtered 217 loci; 219 loci seen.
+    139 genomic sites, of which 53 were covered by multiple loci (38.1%).
+VYZU01154976.1: analyzed 2 loci; filtered 26 loci; 28 loci seen.
+    150 genomic sites, of which 42 were covered by multiple loci (28.0%).
+VYZU01158861.1: analyzed 2 loci; filtered 203 loci; 205 loci seen.
+    124 genomic sites, of which 68 were covered by multiple loci (54.8%).
+VYZU01160556.1: analyzed 2 loci; filtered 108 loci; 110 loci seen.
+    139 genomic sites, of which 55 were covered by multiple loci (39.6%).
+VYZU01162781.1: analyzed 2 loci; filtered 134 loci; 136 loci seen.
+    173 genomic sites, of which 20 were covered by multiple loci (11.6%).
+VYZU01165002.1: analyzed 2 loci; filtered 29 loci; 31 loci seen.
+    135 genomic sites, of which 59 were covered by multiple loci (43.7%).
+VYZU01168059.1: analyzed 2 loci; filtered 185 loci; 187 loci seen.
+    146 genomic sites, of which 46 were covered by multiple loci (31.5%).
+VYZU01169153.1: analyzed 2 loci; filtered 239 loci; 241 loci seen.
+    179 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01174732.1: analyzed 2 loci; filtered 42 loci; 44 loci seen.
+    110 genomic sites, of which 84 were covered by multiple loci (76.4%).
+VYZU01176744.1: analyzed 2 loci; filtered 42 loci; 44 loci seen.
+    124 genomic sites, of which 68 were covered by multiple loci (54.8%).
+VYZU01177888.1: analyzed 2 loci; filtered 104 loci; 106 loci seen.
+    101 genomic sites, of which 86 were covered by multiple loci (85.1%).
+VYZU01180429.1: analyzed 2 loci; filtered 80 loci; 82 loci seen.
+    130 genomic sites, of which 83 were covered by multiple loci (63.8%).
+VYZU01181627.1: analyzed 2 loci; filtered 34 loci; 36 loci seen.
+    190 genomic sites, of which 2 were covered by multiple loci (1.1%).
+VYZU01182128.1: analyzed 2 loci; filtered 38 loci; 40 loci seen.
+    170 genomic sites, of which 23 were covered by multiple loci (13.5%).
+VYZU01183851.1: analyzed 2 loci; filtered 132 loci; 134 loci seen.
+    177 genomic sites, of which 15 were covered by multiple loci (8.5%).
+VYZU01186446.1: analyzed 2 loci; filtered 86 loci; 88 loci seen.
+    160 genomic sites, of which 25 were covered by multiple loci (15.6%).
+VYZU01187485.1: analyzed 2 loci; filtered 90 loci; 92 loci seen.
+    138 genomic sites, of which 56 were covered by multiple loci (40.6%).
+VYZU01189473.1: analyzed 2 loci; filtered 83 loci; 85 loci seen.
+    107 genomic sites, of which 86 were covered by multiple loci (80.4%).
+VYZU01190950.1: analyzed 2 loci; filtered 177 loci; 179 loci seen.
+    120 genomic sites, of which 72 were covered by multiple loci (60.0%).
+VYZU01193784.1: analyzed 2 loci; filtered 99 loci; 101 loci seen.
+    146 genomic sites, of which 45 were covered by multiple loci (30.8%).
+VYZU01195865.1: analyzed 2 loci; filtered 270 loci; 272 loci seen.
+    111 genomic sites, of which 68 were covered by multiple loci (61.3%).
+VYZU01201557.1: analyzed 2 loci; filtered 51 loci; 53 loci seen.
+    142 genomic sites, of which 50 were covered by multiple loci (35.2%).
+VYZU01203486.1: analyzed 2 loci; filtered 83 loci; 85 loci seen.
+    162 genomic sites, of which 30 were covered by multiple loci (18.5%).
+VYZU01206204.1: analyzed 2 loci; filtered 146 loci; 148 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01207247.1: analyzed 2 loci; filtered 147 loci; 149 loci seen.
+    178 genomic sites, of which 14 were covered by multiple loci (7.9%).
+VYZU01210668.1: analyzed 2 loci; filtered 175 loci; 177 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01213553.1: analyzed 2 loci; filtered 106 loci; 108 loci seen.
+    107 genomic sites, of which 85 were covered by multiple loci (79.4%).
+VYZU01214609.1: analyzed 2 loci; filtered 158 loci; 160 loci seen.
+    169 genomic sites, of which 23 were covered by multiple loci (13.6%).
+VYZU01218232.1: analyzed 2 loci; filtered 93 loci; 95 loci seen.
+    155 genomic sites, of which 54 were covered by multiple loci (34.8%).
+VYZU01218639.1: analyzed 2 loci; filtered 36 loci; 38 loci seen.
+    158 genomic sites, of which 36 were covered by multiple loci (22.8%).
+VYZU01220486.1: analyzed 2 loci; filtered 164 loci; 166 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01221794.1: analyzed 2 loci; filtered 141 loci; 143 loci seen.
+    155 genomic sites, of which 37 were covered by multiple loci (23.9%).
+VYZU01225661.1: analyzed 2 loci; filtered 93 loci; 95 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01226158.1: analyzed 2 loci; filtered 105 loci; 107 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01228104.1: analyzed 2 loci; filtered 80 loci; 82 loci seen.
+    115 genomic sites, of which 78 were covered by multiple loci (67.8%).
+VYZU01229544.1: analyzed 2 loci; filtered 39 loci; 41 loci seen.
+    153 genomic sites, of which 43 were covered by multiple loci (28.1%).
+VYZU01232793.1: analyzed 2 loci; filtered 283 loci; 285 loci seen.
+    145 genomic sites, of which 48 were covered by multiple loci (33.1%).
+VYZU01234605.1: analyzed 2 loci; filtered 55 loci; 57 loci seen.
+    168 genomic sites, of which 24 were covered by multiple loci (14.3%).
+VYZU01235540.1: analyzed 2 loci; filtered 23 loci; 25 loci seen.
+    178 genomic sites, of which 23 were covered by multiple loci (12.9%).
+VYZU01236432.1: analyzed 2 loci; filtered 93 loci; 95 loci seen.
+    145 genomic sites, of which 48 were covered by multiple loci (33.1%).
+VYZU01237487.1: analyzed 2 loci; filtered 102 loci; 104 loci seen.
+    112 genomic sites, of which 66 were covered by multiple loci (58.9%).
+VYZU01239665.1: analyzed 2 loci; filtered 83 loci; 85 loci seen.
+    141 genomic sites, of which 51 were covered by multiple loci (36.2%).
+VYZU01241045.1: analyzed 2 loci; filtered 51 loci; 53 loci seen.
+    159 genomic sites, of which 36 were covered by multiple loci (22.6%).
+VYZU01243473.1: analyzed 2 loci; filtered 147 loci; 149 loci seen.
+    128 genomic sites, of which 69 were covered by multiple loci (53.9%).
+VYZU01244078.1: analyzed 2 loci; filtered 148 loci; 150 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01246902.1: analyzed 2 loci; filtered 152 loci; 154 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01248098.1: analyzed 2 loci; filtered 55 loci; 57 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01251397.1: analyzed 2 loci; filtered 246 loci; 248 loci seen.
+    106 genomic sites, of which 95 were covered by multiple loci (89.6%).
+VYZU01252089.1: analyzed 2 loci; filtered 205 loci; 207 loci seen.
+    186 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01256113.1: analyzed 2 loci; filtered 84 loci; 86 loci seen.
+    182 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01256701.1: analyzed 2 loci; filtered 86 loci; 88 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01258302.1: analyzed 2 loci; filtered 222 loci; 224 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01261963.1: analyzed 2 loci; filtered 69 loci; 71 loci seen.
+    99 genomic sites, of which 91 were covered by multiple loci (91.9%).
+VYZU01266946.1: analyzed 2 loci; filtered 406 loci; 408 loci seen.
+    171 genomic sites, of which 24 were covered by multiple loci (14.0%).
+VYZU01270210.1: analyzed 2 loci; filtered 221 loci; 223 loci seen.
+    104 genomic sites, of which 87 were covered by multiple loci (83.7%).
+VYZU01272377.1: analyzed 2 loci; filtered 98 loci; 100 loci seen.
+    190 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01272715.1: analyzed 2 loci; filtered 33 loci; 35 loci seen.
+    201 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01273350.1: analyzed 2 loci; filtered 63 loci; 65 loci seen.
+    120 genomic sites, of which 71 were covered by multiple loci (59.2%).
+VYZU01276643.1: analyzed 2 loci; filtered 216 loci; 218 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01277837.1: analyzed 2 loci; filtered 181 loci; 183 loci seen.
+    121 genomic sites, of which 72 were covered by multiple loci (59.5%).
+VYZU01279599.1: analyzed 2 loci; filtered 208 loci; 210 loci seen.
+    182 genomic sites, of which 11 were covered by multiple loci (6.0%).
+VYZU01282377.1: analyzed 2 loci; filtered 63 loci; 65 loci seen.
+    186 genomic sites, of which 5 were covered by multiple loci (2.7%).
+VYZU01283361.1: analyzed 2 loci; filtered 91 loci; 93 loci seen.
+    108 genomic sites, of which 85 were covered by multiple loci (78.7%).
+VYZU01284944.1: analyzed 2 loci; filtered 114 loci; 116 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01285295.1: analyzed 2 loci; filtered 99 loci; 101 loci seen.
+    190 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01286593.1: analyzed 2 loci; filtered 45 loci; 47 loci seen.
+    170 genomic sites, of which 26 were covered by multiple loci (15.3%).
+VYZU01288179.1: analyzed 2 loci; filtered 110 loci; 112 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01288491.1: analyzed 2 loci; filtered 84 loci; 86 loci seen.
+    197 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01290228.1: analyzed 2 loci; filtered 191 loci; 193 loci seen.
+    177 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01292173.1: analyzed 2 loci; filtered 64 loci; 66 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01293101.1: analyzed 2 loci; filtered 148 loci; 150 loci seen.
+    196 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01295593.1: analyzed 2 loci; filtered 82 loci; 84 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01296559.1: analyzed 2 loci; filtered 68 loci; 70 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01297576.1: analyzed 2 loci; filtered 108 loci; 110 loci seen.
+    173 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01299804.1: analyzed 2 loci; filtered 189 loci; 191 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01300356.1: analyzed 2 loci; filtered 11 loci; 13 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01303633.1: analyzed 2 loci; filtered 292 loci; 294 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01304949.1: analyzed 2 loci; filtered 103 loci; 105 loci seen.
+    190 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01305947.1: analyzed 2 loci; filtered 50 loci; 52 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01307535.1: analyzed 2 loci; filtered 214 loci; 216 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01311484.1: analyzed 2 loci; filtered 307 loci; 309 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01312558.1: analyzed 2 loci; filtered 32 loci; 34 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01312985.1: analyzed 2 loci; filtered 80 loci; 82 loci seen.
+    186 genomic sites, of which 6 were covered by multiple loci (3.2%).
+VYZU01314427.1: analyzed 2 loci; filtered 96 loci; 98 loci seen.
+    148 genomic sites, of which 44 were covered by multiple loci (29.7%).
+VYZU01314796.1: analyzed 2 loci; filtered 134 loci; 136 loci seen.
+    160 genomic sites, of which 14 were covered by multiple loci (8.8%).
+VYZU01316638.1: analyzed 2 loci; filtered 112 loci; 114 loci seen.
+    156 genomic sites, of which 36 were covered by multiple loci (23.1%).
+VYZU01317252.1: analyzed 2 loci; filtered 179 loci; 181 loci seen.
+    195 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01320026.1: analyzed 2 loci; filtered 85 loci; 87 loci seen.
+    110 genomic sites, of which 82 were covered by multiple loci (74.5%).
+VYZU01320701.1: analyzed 2 loci; filtered 196 loci; 198 loci seen.
+    99 genomic sites, of which 92 were covered by multiple loci (92.9%).
+VYZU01322363.1: analyzed 2 loci; filtered 136 loci; 138 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01325694.1: analyzed 2 loci; filtered 259 loci; 261 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01326385.1: analyzed 2 loci; filtered 250 loci; 252 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01329571.1: analyzed 2 loci; filtered 133 loci; 135 loci seen.
+    187 genomic sites, of which 5 were covered by multiple loci (2.7%).
+VYZU01330226.1: analyzed 2 loci; filtered 216 loci; 218 loci seen.
+    199 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01332135.1: analyzed 2 loci; filtered 21 loci; 23 loci seen.
+    180 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01333132.1: analyzed 2 loci; filtered 225 loci; 227 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01335397.1: analyzed 2 loci; filtered 227 loci; 229 loci seen.
+    197 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01338488.1: analyzed 2 loci; filtered 255 loci; 257 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01339621.1: analyzed 2 loci; filtered 128 loci; 130 loci seen.
+    118 genomic sites, of which 66 were covered by multiple loci (55.9%).
+VYZU01341940.1: analyzed 2 loci; filtered 187 loci; 189 loci seen.
+    193 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01342564.1: analyzed 2 loci; filtered 44 loci; 46 loci seen.
+    167 genomic sites, of which 24 were covered by multiple loci (14.4%).
+VYZU01342923.1: analyzed 2 loci; filtered 360 loci; 362 loci seen.
+    138 genomic sites, of which 57 were covered by multiple loci (41.3%).
+VYZU01346366.1: analyzed 2 loci; filtered 63 loci; 65 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01346912.1: analyzed 2 loci; filtered 172 loci; 174 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01348963.1: analyzed 2 loci; filtered 91 loci; 93 loci seen.
+    213 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01350729.1: analyzed 2 loci; filtered 227 loci; 229 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01352172.1: analyzed 2 loci; filtered 148 loci; 150 loci seen.
+    140 genomic sites, of which 56 were covered by multiple loci (40.0%).
+VYZU01352820.1: analyzed 2 loci; filtered 33 loci; 35 loci seen.
+    180 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01353981.1: analyzed 2 loci; filtered 119 loci; 121 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01354565.1: analyzed 2 loci; filtered 112 loci; 114 loci seen.
+    199 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01355881.1: analyzed 2 loci; filtered 68 loci; 70 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01357683.1: analyzed 2 loci; filtered 197 loci; 199 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01358853.1: analyzed 2 loci; filtered 183 loci; 185 loci seen.
+    105 genomic sites, of which 87 were covered by multiple loci (82.9%).
+VYZU01359327.1: analyzed 2 loci; filtered 144 loci; 146 loci seen.
+    178 genomic sites, of which 17 were covered by multiple loci (9.6%).
+VYZU01361371.1: analyzed 2 loci; filtered 420 loci; 422 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01366272.1: analyzed 2 loci; filtered 427 loci; 429 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01367368.1: analyzed 2 loci; filtered 179 loci; 181 loci seen.
+    194 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01370083.1: analyzed 2 loci; filtered 281 loci; 283 loci seen.
+    191 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01371881.1: analyzed 2 loci; filtered 318 loci; 320 loci seen.
+    142 genomic sites, of which 49 were covered by multiple loci (34.5%).
+VYZU01372624.1: analyzed 2 loci; filtered 87 loci; 89 loci seen.
+    192 genomic sites, of which 0 were covered by multiple loci (0.0%).
+VYZU01378363.1: analyzed 2 loci; filtered 1261 loci; 1263 loci seen.
+    108 genomic sites, of which 86 were covered by multiple loci (79.6%).
+VYZU01379508.1: analyzed 2 loci; filtered 264 loci; 266 loci seen.
+    117 genomic sites, of which 77 were covered by multiple loci (65.8%).
+VYZU01380321.1: analyzed 2 loci; filtered 376 loci; 378 loci seen.
+    190 genomic sites, of which 0 were covered by multiple loci (0.0%).
+: analyzed 1 loci; filtered 269 loci; 270 loci seen.
+    96 genomic sites, of which 0 were covered by multiple loci (0.0%).
+END batch_progress
+
+BEGIN samples_per_loc_prefilters
+# Distribution of valid samples matched to a catalog locus prior to filtering.
+n_samples	n_loci
+97	8
+98	21
+99	43
+100	83
+101	101
+102	142
+103	176
+104	223
+105	273
+106	397
+107	1113
+END samples_per_loc_prefilters
+
+BEGIN missing_samples_per_loc_prefilters
+# Distribution of missing samples for each catalog locus prior to filtering.
+# Absent samples at locus	Count
+0	1113
+1	397
+2	273
+3	223
+4	176
+5	142
+6	101
+7	83
+8	43
+9	21
+10	8
+END missing_samples_per_loc_prefilters
+
+BEGIN snps_per_loc_prefilters
+# Distribution of the number of SNPs per catalog locus prior to filtering.
+n_snps	n_loci
+1	109
+2	203
+3	322
+4	378
+5	368
+6	340
+7	250
+8	203
+9	147
+10	102
+11	64
+12	46
+13	18
+14	8
+15	12
+16	8
+17	2
+END snps_per_loc_prefilters
+
+BEGIN samples_per_loc_postfilters
+# Distribution of valid samples matched to a catalog locus after filtering.
+n_samples	n_loci
+97	8
+98	21
+99	43
+100	83
+101	101
+102	142
+103	176
+104	223
+105	273
+106	397
+107	1113
+END samples_per_loc_postfilters
+
+BEGIN missing_samples_per_loc_postfilters
+# Distribution of missing samples for each catalog locus after filtering.
+# Absent samples at locus	Count
+0	1113
+1	397
+2	273
+3	223
+4	176
+5	142
+6	101
+7	83
+8	43
+9	21
+10	8
+END missing_samples_per_loc_postfilters
+
+BEGIN snps_per_loc_postfilters
+# Distribution of the number of SNPs per catalog locus (after filtering).
+n_snps	n_loci
+1	126
+2	215
+3	348
+4	391
+5	363
+6	329
+7	259
+8	190
+9	143
+10	93
+11	53
+12	37
+13	16
+14	8
+15	6
+16	3
+END snps_per_loc_postfilters

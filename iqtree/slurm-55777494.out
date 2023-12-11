@@ -1,0 +1,28 @@
+Logging to './populations.log'.
+Locus/sample distributions will be written to './populations.log.distribs'.
+populations parameters selected:
+  Percent samples limit per population: 0
+  Locus Population limit: 1
+  Percent samples overall: 0
+  Minor allele frequency cutoff: 0
+  Maximum observed heterozygosity cutoff: 1
+  Applying Fst correction: none.
+  Pi/Fis kernel smoothing: off
+  Fstats kernel smoothing: off
+  Bootstrap resampling: off
+
+Parsing population map...
+The population map contained 107 samples, 107 population(s), 1 group(s).
+Error opening white/black list file '2590.whitelist.txt'
+sed: can't read populations.all.phylip: No such file or directory
+IQ-TREE multicore version 2.2.0 COVID-edition for Linux 64-bit built Jun  1 2022
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan.
+
+Host:    r06r12n04 (AVX, 503 GB RAM)
+Command: /home/d669d153/work/iqtree-2.2.0-Linux/bin/iqtree2 -s pops.phy -m MFP -bb 1000 -nt AUTO
+Seed:    923525 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Fri Dec  8 09:07:00 2023
+Kernel:  AVX - auto-detect threads (15 CPU cores detected)
+
+Reading alignment file pops.phy ... ERROR: Cannot read file pops.phy
