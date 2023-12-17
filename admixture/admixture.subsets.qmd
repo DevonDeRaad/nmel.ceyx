@@ -1,0 +1,336 @@
+---
+title: "run admixture on Ceyx subsets"
+format:
+  html:
+    code-fold: show
+    code-tools: true
+toc: true
+toc-title: Document Contents
+number-sections: true
+embed-resources: true
+---
+
+## load packages and SNP data
+```{r}
+#| output: false
+library(vcfR)
+library(SNPfiltR)
+library(ggplot2)
+#read vcfr
+v<-read.vcfR("~/Desktop/nmel.ceyx.rad/filtered.unlinked.snps.vcf.gz")
+```
+
+## Subset vcfs to contain only the groups with internal structure
+```{r}
+#read in sampling details
+sample.info<-read.csv("~/Desktop/nmel.ceyx.rad/ceyx.full.sampling.csv")
+#prune sampling so it matches the files retained in the vcf
+sample.info<-sample.info[sample.info$ID %in% colnames(v@gt)[-1],]
+#get details on vcf
+v
+colnames(v@gt)
+
+#subset down to only solitarius samples
+vcf.sol<-v[,c(1,2,6:17,20,32,83:90)]
+#do a separate filtering protocol to remove singletons MAC thresholds
+vcf.sol<-min_mac(vcf.sol, min.mac = 2)
+colnames(vcf.sol@gt)
+
+#subset down to only meeki samples
+vcf.meek<-v[,c(1,34:41,58:63,80,82)]
+#do a separate filtering protocol to remove singletons MAC thresholds
+vcf.meek<-min_mac(vcf.meek, min.mac = 2)
+colnames(vcf.meek@gt)
+
+#subset down to only collectoris samples
+vcf.coll<-v[,c(1,46:57,67:79,81,96:106)]
+#do a separate filtering protocol to remove singletons MAC thresholds
+vcf.coll<-min_mac(vcf.coll, min.mac = 2)
+colnames(vcf.coll@gt)
+
+##write out each subset vcf file and move to the cluster
+#vcfR::write.vcf(vcf.sol, file="~/Desktop/nmel.ceyx.rad/solitarius.mac2.vcf.gz")
+#vcfR::write.vcf(vcf.meek, file="~/Desktop/nmel.ceyx.rad/meeki.mac2.vcf.gz")
+#vcfR::write.vcf(vcf.coll, file="~/Desktop/nmel.ceyx.rad/collectoris.mac2.vcf.gz")
+```
+
+## run solitarius on the cluster
+```{bash, eval=FALSE}
+#!/bin/sh
+#
+#SBATCH --job-name=admixture.all              # Job Name
+#SBATCH --nodes=1             # 40 nodes
+#SBATCH --ntasks-per-node=5               # 40 CPU allocation per Task
+#SBATCH --partition=sixhour            # Name of the Slurm partition used
+#SBATCH --chdir=/home/d669d153/work/nmel.ceyx/admixture.sol     # Set working d$
+#SBATCH --mem-per-cpu=1gb            # memory requested
+#SBATCH --time=200
+
+gunzip solitarius.mac2.vcf.gz
+#use plink to convert vcf directly to bed format:
+/home/d669d153/work/plink --vcf /home/d669d153/work/nmel.ceyx/admixture.sol/solitarius.mac2.vcf  --double-id --allow-extra-chr --make-bed --out binary_fileset
+#fix chromosome names
+cut -f2- binary_fileset.bim  > temp
+awk 'BEGIN{FS=OFS="\t"}{print value 1 OFS $0}' temp > binary_fileset.bim
+rm temp
+
+#run admixture for a K of 1-5, using cross-validation, with 5 threads
+for K in {1..5}; 
+do /home/d669d153/work/admixture_linux-1.3.0/admixture --cv -j5 -m EM binary_fileset.bed $K | tee log${K}.out;
+done
+
+#Which K iteration is optimal according to ADMIXTURE ?
+grep -h CV log*.out > log.errors.txt
+```
+
+## view solitarius results
+```{r}
+#setwd to admixture directory run on the cluster
+setwd("~/Desktop/nmel.ceyx.rad/admixture.sol")
+#read in log error values to determine optimal K
+log<-read.table("log.errors.txt")[,c(3:4)]
+#use double backslash to interpret the opening parentheses literally in the regular expression
+log$V3<-gsub("\\(K=", "", log$V3)
+log$V3<-gsub("):", "", log$V3)
+#interpret K values as numerical
+log$V3<-as.numeric(log$V3)
+#rename columns
+colnames(log)<-c("Kvalue","cross.validation.error")
+#make plot showing the cross validation error across K values 1:10
+ggplot(data=log, aes(x=Kvalue, y=cross.validation.error, group=1)) +
+  geom_line(linetype = "dashed")+
+  geom_point()+
+  ylab("cross-validation error")+
+  xlab("K")+
+  scale_x_continuous(breaks = c(1:15))+
+  theme_classic()
+
+#read in input file in order to get list of input samples in order
+samps<-read.table("binary_fileset.fam")[,1]
+#reorder sampling df to match order of the plot
+#sample.info<-sample.info[match(samps, sample.info$ID),]
+#sample.info$ID == samps
+#read in all ten runs and save each dataframe in a list
+runs<-list()
+#read in log files
+for (i in 1:5){
+  runs[[i]]<-read.table(paste0("binary_fileset.", i, ".Q"))
+}
+
+#print sample order
+samps
+
+#check that new sample order matches the tree
+samps[c(11,23,10,20,6,14,15,7,21,8,22,2,9,17,13,16,1,3,12,4,5,18,19)]
+
+#reorder sample order to match ML tree
+for (i in 1:5){
+  runs[[i]]<-runs[[i]][c(11,23,10,20,6,14,15,7,21,8,22,2,9,17,13,16,1,3,12,4,5,18,19),]
+}
+
+#plot
+par(mfrow=c(1,1))
+#plot each run
+for (i in 1:5){
+barplot(t(as.matrix(runs[[i]])), col=rainbow(i), ylab="Ancestry", border="black")
+}
+
+#plot and export K=2, since optimal K=1
+barplot(t(as.matrix(runs[[1]])), col=c("#882255"), ylab="Ancestry", border="black")
+barplot(t(as.matrix(runs[[2]])), col=c("#882255","grey"), ylab="Ancestry", border="black")
+#save barplot
+#pdf("~/Desktop/nmel.ceyx.rad/admixture.sol/k1.pdf", width = 4.5, height=2.56)
+#barplot(t(as.matrix(runs[[1]])), col=c("#882255"), ylab="Ancestry", border="black")
+#dev.off()
+#pdf("~/Desktop/nmel.ceyx.rad/admixture.sol/k2.pdf", width = 4.5, height=2.56)
+#barplot(t(as.matrix(runs[[2]])), col=c("#882255","grey"), ylab="Ancestry", border="black")
+#dev.off()
+```
+
+## run collectoris on the cluster
+```{bash, eval=FALSE}
+#!/bin/sh
+#
+#SBATCH --job-name=admixture.all              # Job Name
+#SBATCH --nodes=1             # 40 nodes
+#SBATCH --ntasks-per-node=5               # 40 CPU allocation per Task
+#SBATCH --partition=sixhour            # Name of the Slurm partition used
+#SBATCH --chdir=/home/d669d153/work/nmel.ceyx/admixture.coll     # Set working d$
+#SBATCH --mem-per-cpu=1gb            # memory requested
+#SBATCH --time=200
+
+gunzip collectoris.mac2.vcf.gz
+#use plink to convert vcf directly to bed format:
+/home/d669d153/work/plink --vcf /home/d669d153/work/nmel.ceyx/admixture.coll/collectoris.mac2.vcf  --double-id --allow-extra-chr --make-bed --out binary_fileset
+#fix chromosome names
+cut -f2- binary_fileset.bim  > temp
+awk 'BEGIN{FS=OFS="\t"}{print value 1 OFS $0}' temp > binary_fileset.bim
+rm temp
+
+#run admixture for a K of 1-5, using cross-validation, with 5 threads
+for K in {1..5}; 
+do /home/d669d153/work/admixture_linux-1.3.0/admixture --cv -j5 -m EM binary_fileset.bed $K | tee log${K}.out;
+done
+
+#Which K iteration is optimal according to ADMIXTURE ?
+grep -h CV log*.out > log.errors.txt
+```
+
+## view collectoris results
+```{r}
+#setwd to admixture directory run on the cluster
+setwd("~/Desktop/nmel.ceyx.rad/admixture.coll")
+#read in log error values to determine optimal K
+log<-read.table("log.errors.txt")[,c(3:4)]
+#use double backslash to interpret the opening parentheses literally in the regular expression
+log$V3<-gsub("\\(K=", "", log$V3)
+log$V3<-gsub("):", "", log$V3)
+#interpret K values as numerical
+log$V3<-as.numeric(log$V3)
+#rename columns
+colnames(log)<-c("Kvalue","cross.validation.error")
+#make plot showing the cross validation error across K values 1:10
+ggplot(data=log, aes(x=Kvalue, y=cross.validation.error, group=1)) +
+  geom_line(linetype = "dashed")+
+  geom_point()+
+  ylab("cross-validation error")+
+  xlab("K")+
+  scale_x_continuous(breaks = c(1:15))+
+  theme_classic()
+
+#read in input file in order to get list of input samples in order
+samps<-read.table("binary_fileset.fam")[,1]
+#reorder sampling df to match order of the plot
+#sample.info<-sample.info[match(samps, sample.info$ID),]
+#sample.info$ID == samps
+#read in all ten runs and save each dataframe in a list
+runs<-list()
+#read in log files
+for (i in 1:5){
+  runs[[i]]<-read.table(paste0("binary_fileset.", i, ".Q"))
+}
+
+#print sample order
+samps
+
+#check that new sample order matches the tree
+samps[c(10,7,32,9,8,33,4,3,5,2,30,1,6,31,12,11,25,26,34,35,24,28,29,15,18,16,17,13,14,27,37,20,22,36,19,21,23)]
+
+#reorder sample order to match ML tree
+for (i in 1:5){
+  runs[[i]]<-runs[[i]][c(10,7,32,9,8,33,4,3,5,2,30,1,6,31,12,11,25,26,34,35,24,28,29,15,18,16,17,13,14,27,37,20,22,36,19,21,23),]
+}
+
+#plot
+par(mfrow=c(1,1))
+#plot each run
+for (i in 1:5){
+barplot(t(as.matrix(runs[[i]])), col=rainbow(i), ylab="Ancestry", border="black")
+}
+
+#plot and export K=3 (optimal) and K=4
+barplot(t(as.matrix(runs[[3]])), col=c("white","grey","#DDCC77"), ylab="Ancestry", border="black")
+barplot(t(as.matrix(runs[[4]])), col=c("black","#DDCC77","grey","white"), ylab="Ancestry", border="black")
+#save barplot
+#pdf("~/Desktop/nmel.ceyx.rad/admixture.coll/k3.pdf", width = 4.5, height=2.28)
+#barplot(t(as.matrix(runs[[3]])), col=c("white","grey","#DDCC77"), ylab="Ancestry", border="black")
+#dev.off()
+#pdf("~/Desktop/nmel.ceyx.rad/admixture.coll/k4.pdf", width = 4.5, height=2.28)
+#barplot(t(as.matrix(runs[[4]])), col=c("black","#DDCC77","grey","white"), ylab="Ancestry", border="black")
+#dev.off()
+```
+
+## run meeki on the cluster
+```{bash, eval=FALSE}
+#!/bin/sh
+#
+#SBATCH --job-name=admixture.all              # Job Name
+#SBATCH --nodes=1             # 40 nodes
+#SBATCH --ntasks-per-node=5               # 40 CPU allocation per Task
+#SBATCH --partition=sixhour            # Name of the Slurm partition used
+#SBATCH --chdir=/home/d669d153/work/nmel.ceyx/admixture.meeki     # Set working d$
+#SBATCH --mem-per-cpu=1gb            # memory requested
+#SBATCH --time=200
+
+gunzip meeki.mac2.vcf.gz
+#use plink to convert vcf directly to bed format:
+/home/d669d153/work/plink --vcf /home/d669d153/work/nmel.ceyx/admixture.meeki/meeki.mac2.vcf  --double-id --allow-extra-chr --make-bed --out binary_fileset
+#fix chromosome names
+cut -f2- binary_fileset.bim  > temp
+awk 'BEGIN{FS=OFS="\t"}{print value 1 OFS $0}' temp > binary_fileset.bim
+rm temp
+
+#run admixture for a K of 1-5, using cross-validation, with 5 threads
+for K in {1..5}; 
+do /home/d669d153/work/admixture_linux-1.3.0/admixture --cv -j5 -m EM binary_fileset.bed $K | tee log${K}.out;
+done
+
+#Which K iteration is optimal according to ADMIXTURE ?
+grep -h CV log*.out > log.errors.txt
+```
+
+## view meeki results
+```{r}
+#setwd to admixture directory run on the cluster
+setwd("~/Desktop/nmel.ceyx.rad/admixture.meeki")
+#read in log error values to determine optimal K
+log<-read.table("log.errors.txt")[,c(3:4)]
+#use double backslash to interpret the opening parentheses literally in the regular expression
+log$V3<-gsub("\\(K=", "", log$V3)
+log$V3<-gsub("):", "", log$V3)
+#interpret K values as numerical
+log$V3<-as.numeric(log$V3)
+#rename columns
+colnames(log)<-c("Kvalue","cross.validation.error")
+#make plot showing the cross validation error across K values 1:10
+ggplot(data=log, aes(x=Kvalue, y=cross.validation.error, group=1)) +
+  geom_line(linetype = "dashed")+
+  geom_point()+
+  ylab("cross-validation error")+
+  xlab("K")+
+  scale_x_continuous(breaks = c(1:15))+
+  theme_classic()
+
+#read in input file in order to get list of input samples in order
+samps<-read.table("binary_fileset.fam")[,1]
+#reorder sampling df to match order of the plot
+#sample.info<-sample.info[match(samps, sample.info$ID),]
+#sample.info$ID == samps
+#read in all ten runs and save each dataframe in a list
+runs<-list()
+#read in log files
+for (i in 1:5){
+  runs[[i]]<-read.table(paste0("binary_fileset.", i, ".Q"))
+}
+
+#print sample order
+samps
+
+#check that new sample order matches the tree
+samps[c(8,16,3,9,14,5,6,4,1,7,2,12,13,10,11,15)]
+
+#reorder sample order to match ML tree
+for (i in 1:5){
+  runs[[i]]<-runs[[i]][c(8,16,3,9,14,5,6,4,1,7,2,12,13,10,11,15),]
+}
+
+#plot
+par(mfrow=c(1,1))
+#plot each run
+for (i in 1:5){
+barplot(t(as.matrix(runs[[i]])), col=rainbow(i), ylab="Ancestry", border="black")
+}
+
+#plot and export K=2, since optimal K=1
+barplot(t(as.matrix(runs[[2]])), col=c("#117733","grey"), ylab="Ancestry", border="black")
+barplot(t(as.matrix(runs[[1]])), col=c("#117733"), ylab="Ancestry", border="black")
+#save barplot
+#pdf("~/Desktop/nmel.ceyx.rad/admixture.meeki/k1.pdf", width = 4.5, height=2.88)
+#barplot(t(as.matrix(runs[[1]])), col=c("#117733"), ylab="Ancestry", border="black")
+#dev.off()
+#save barplot
+#pdf("~/Desktop/nmel.ceyx.rad/admixture.meeki/k2.pdf", width = 4.5, height=2.88)
+#barplot(t(as.matrix(runs[[2]])), col=c("#117733","grey"), ylab="Ancestry", border="black")
+#dev.off()
+```
+
