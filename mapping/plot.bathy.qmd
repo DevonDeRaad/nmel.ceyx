@@ -1,0 +1,68 @@
+---
+title: "bathymap"
+format:
+  html:
+    code-fold: show
+    code-tools: true
+toc: true
+toc-title: Document Contents
+number-sections: true
+embed-resources: true
+---
+
+## Plot all of northern Melanesia
+```{r}
+# Load raster package
+library(raster)
+# Load ETOPO1 data (ice)
+# I got these data by using the 'Grid Extract' tool on this website (https://www.ncei.noaa.gov/maps/grid-extract/). For each grid plotted here I chose the option: 'Ice Surface; 15 Arcseconds'.
+#try all of Northern Melanesia
+etopo.i <- raster("~/Downloads/exportImage.nmel.ice.tiff")
+# Plot ETOPO1 ice
+colfunc <- colorRampPalette(c("black", "white"))
+plot(etopo.i, col=colfunc(1000))
+
+# Colour palette
+# Plot
+plot(etopo.i, col=c("Light Sky Blue 1","grey25","#00A600","#47BE00","#63C600","#80CE00","#A0D600", "#C2DE00","#E6E600","#E7D01A","#E8C034","#EAB64E","#EBB169","#EDB283"), breaks=c(-9000,-130,seq(0,4000, by = 4000/12)))
+
+# Plot again just trying stuff out
+plot(etopo.i, col=c("white","grey70","black"), breaks=c(-9000,-130,0,4000))
+
+```
+
+## plot just the Solomons
+```{r}
+# Load ETOPO1 data (ice)
+etopo.i <- raster("~/Downloads/exportImage.sols.tiff")
+# Plot ETOPO1 ice
+colfunc <- colorRampPalette(c("black", "white"))
+plot(etopo.i, col=colfunc(1000))
+
+#plot
+plot(etopo.i, col=c("white","grey25","#00A600","#47BE00","#63C600","#80CE00","#A0D600", "#C2DE00","#E6E600","#E7D01A","#E8C034","#EAB64E","#EBB169","#EDB283"), breaks=c(-9000,-130,seq(0,2651, by = 2651/12)))
+
+# Colour palette
+# save
+#pdf("~/Desktop/nmel.ceyx.rad/sols.bathy.pdf", width = 6, height=4.75)
+#plot(etopo.i, col=c("white","grey25","#00A600","#47BE00","#63C600","#80CE00","#A0D600", "#C2DE00","#E6E600","#E7D01A","#E8C034","#EAB64E","#EBB169","#EDB283"), breaks=c(-9000,-130,seq(0,2651, by = 2651/12)))
+#dev.off()
+```
+
+## Plot just the New Georgia group
+```{r}
+# Load ETOPO1 data (ice)
+etopo.b <- raster("~/Downloads/exportImage.ice.tiff")
+# Plot ETOPO1 ice
+colfunc <- colorRampPalette(c("black", "white"))
+plot(etopo.b, col=colfunc(1000))
+
+# Colour palette
+# Plot
+plot(etopo.b, col=c("white","grey25","#00A600","#47BE00","#63C600","#80CE00","#A0D600", "#C2DE00","#E6E600","#E7D01A","#E8C034","#EAB64E","#EBB169","#EDB283"), breaks=c(-4500,-130,seq(0,2651, by = 2651/12)))
+# Colour palette
+# save
+#pdf("~/Desktop/nmel.ceyx.rad/NG.bathy.pdf", width = 6, height=4.75)
+#plot(etopo.b, col=c("white","grey25","#00A600","#47BE00","#63C600","#80CE00","#A0D600", "#C2DE00","#E6E600","#E7D01A","#E8C034","#EAB64E","#EBB169","#EDB283"), breaks=c(-4500,-130,seq(0,2651, by = 2651/12)))
+#dev.off()
+```
