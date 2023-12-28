@@ -1,0 +1,56 @@
+---
+title: "Assess diversification rate"
+format:
+  html:
+    code-fold: show
+    code-tools: true
+toc: true
+toc-title: Document Contents
+number-sections: true
+embed-resources: true
+---
+
+## Use phytools to simulate 1K trees under pure-birth model, generate 95% CI, and overlay the empirical LTT plot for the 10 northern Melanesian *Ceyx* lineages
+```{r}
+#phytools approach
+library(phytools)
+#read in the consensus tree
+tree <- ape::read.nexus(file = "~/Desktop/nmel.ceyx.rad/snapp/rep3.consensus.tree")
+ltt(tree)
+#remove root so that only the diversification rate within the northern Melanesian clade is assessed
+plot(drop.tip(tree, "margarethae"))
+tree<-drop.tip(tree, "margarethae")
+Ntip(tree)
+
+#use phytools to plot the lineage through time plot for the 10 ingroup northern Melanesian Ceyx and Pybus & Harvey's "gamma" statistic (https://royalsocietypublishing.org/doi/abs/10.1098/rspb.2000.1278)
+ltt(tree)
+#set h = the height of the empirical tree
+h<-max(nodeHeights(tree))
+h
+#set x as 1000 evenly spaced numbers between zero and the height of the input tree
+x<-seq(0,h,by=h/1000)
+#set birth rate equal to a log-linear rate, following a pure birth prediction
+b<-(log(Ntip(tree))-log(2))/h
+#simulate 1000 trees with the same height and tip number as our empirical tree, plus a log-linear diversification rate
+trees<-pbtree(b=b, n=Ntip(tree), t=h,nsim=1000 ,method="direct", quiet=TRUE)
+
+#calculate 95% CI for the 1000 trees simmed above under a pure birth/death model
+object<-ltt95(trees,log=TRUE,plot=FALSE, mode = "mean")
+#set up the plot
+par(bty="l")
+#plot background 95% CI based on simulated data
+plot(object, labels=FALSE, shaded=TRUE, xaxis = "negative", bg="grey90")
+axis(side = 1, at=seq(-4,0, by=.5))
+#cover the mean line with a grey line
+lines(x=object[,1]-max(object[,1]),y=object[,3], type="l", lwd=2, col="grey60")
+#plot empirical LTT
+obj2<-ltt(tree, plot=FALSE)
+#flip x axis values to negative
+obj2$times<-obj2$times-max(obj2$times)
+#plot on top of existing plot
+plot(obj2, add=TRUE, log.lineages=FALSE, col="black", lwd=4, lty=1)
+
+#run the above code (lines 39-50) in the console, resize your plot pane to the exact size and dimensions you want, then run the below code in the console to save the plot
+#dev.print(pdf, file="~/Desktop/nmel.ceyx.rad/LTT.plot.pdf")
+```
+

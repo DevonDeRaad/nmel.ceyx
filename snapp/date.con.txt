@@ -1,0 +1,2 @@
+lognormal(0,3.9,.15)	crown	solitarius,nigromaxilla,sacerdotis,mulcatus,meeki,malaitae,coll.west,coll.east,gentianus,dispar
+monophyletic	NA	solitarius,nigromaxilla,sacerdotis,mulcatus,meeki,malaitae,coll.west,coll.east,gentianus,dispar

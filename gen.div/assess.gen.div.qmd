@@ -1,0 +1,109 @@
+---
+title: "assess genetic diversity *Ceyx*"
+format:
+  html:
+    code-fold: show
+    code-tools: true
+toc: true
+toc-title: Document Contents
+number-sections: true
+embed-resources: true
+---
+
+## load packages and data
+```{r}
+#| output: false
+library(vcfR)
+library(SNPfiltR)
+library(ggplot2)
+#read vcfr
+v<-read.vcfR("~/Desktop/nmel.ceyx.rad/filtered.unlinked.snps.vcf.gz")
+#remove outgroup philippines samples and all invariant resulting SNPs
+v<-v[,c(1:20,26:91,93,94,96:108)]
+#read in sampling details
+sample.info<-read.csv("~/Desktop/nmel.ceyx.rad/ceyx.full.sampling.csv")
+#prune sampling so it matches the files retained in the vcf
+sample.info<-sample.info[sample.info$ID %in% colnames(v@gt)[-1],]
+```
+## make popmaps to assign samples passing filtering protocols to species
+```{r}
+#make both popmaps
+#write.table(sample.info[,c(1,5)],file = "~/Desktop/nmel.ceyx.rad/retained.popmap.txt", quote = F, row.names = F, col.names = F, sep = "\t")
+#write.table(sample.info[,c(1,1)],file = "~/Desktop/nmel.ceyx.rad/ceyx.singlesample.popmap.txt", quote = F, row.names = F, col.names = F, sep = "\t")
+#move these to the KUHPCC to use in the bash code below:
+```
+
+## estimate heterozygosity and pi using Stacks on the unfiltered .bam files, run on the KUHPCC
+```{bash, eval=FALSE}
+#!/bin/sh
+#
+#SBATCH --job-name=admixture.all              # Job Name
+#SBATCH --nodes=1             # 40 nodes
+#SBATCH --ntasks-per-node=10               # 40 CPU allocation per Task
+#SBATCH --partition=sixhour            # Name of the Slurm partition used
+#SBATCH --chdir=/home/d669d153/work/nmel.ceyx     # Set working d$
+#SBATCH --mem-per-cpu=1gb            # memory requested
+#SBATCH --time=200
+
+#run this in bash, where retained.popmap.txt assigns samples to species, to get species level pi estimates
+#and todi.singlesample.popmap.txt assigns each sample as a unique population to get per individual heterozygosity estimates
+
+# Run populations and export population info
+/home/d669d153/work/stacks-2.41/populations -P ./fastq -M retained.popmap.txt --fstats -O /home/d669d153/work/nmel.ceyx/pops.div -t 10
+# Run populations and export population info
+/home/d669d153/work/stacks-2.41/populations -P ./fastq -M ceyx.singlesample.popmap.txt -O /home/d669d153/work/nmel.ceyx/indivs.div -t 10
+
+#Now, move the file labeled 'populations.sumstats_summary.tsv' from each of these iterations from the KUHPCC to your local machine
+```
+
+## make heterozygostiy/pi dot chart
+```{r}
+#after manually removing the 'SNPs only' section of the output files, to retain the 'all sites (including invariant)' portion, and altering the header of the first column to be 'pop ID' rather than "# pop ID', read in each of these output files
+#per population
+pi.pops<-read.table("~/Desktop/nmel.ceyx.rad/pops.sumstats_summary.tsv", header=T, sep='\t')
+#per sample
+pi.sample<-read.table("~/Desktop/nmel.ceyx.rad/indivs.sumstats_summary.tsv", header=T, sep='\t')
+
+#check to make sure order matches between dataframes
+pi.sample$Pop.ID == sample.info$ID
+
+#build plotting df
+plotting.df<-sample.info
+plotting.df$obs.het<-pi.sample$Obs_Het
+#add connecting column between pi.pops and plotting.df
+pi.pops$species<-pi.pops$Pop.ID
+#reorder factors
+plotting.df$admix.assign <- factor(plotting.df$admix.assign, levels = c("mulcatus","solitarius","dispar","gentianus","sacerdotis","malaitae","meeki","nigromaxilla","coll.east","coll.west"))
+pi.pops$admix.assign <- factor(pi.pops$Pop.ID, levels = c("mulcatus","solitarius","dispar","gentianus","sacerdotis","malaitae","meeki","nigromaxilla","coll.east","coll.west"))
+
+#plot heterozygosity violin plots
+ggplot(plotting.df, aes(x=admix.assign, y=obs.het)) + 
+  #geom_violin(trim = FALSE)+
+  geom_point(pi.pops, mapping=aes(y=Pi), pch=8, cex=3)+
+  geom_dotplot(binaxis='y', stackdir='center', dotsize = 1, alpha=.8, aes(fill=admix.assign, col=admix.assign))+
+  theme_classic()+
+  scale_fill_manual(values=c("#AA4499","#882255","#332288","#88CCEE","#CC6677","#44AA99","#117733","#999933","grey","#DDCC77"))+
+  scale_color_manual(values=c("#AA4499","#882255","#332288","#88CCEE","#CC6677","#44AA99","#117733","#999933","grey","#DDCC77"))+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1,size=12, face = "italic", color="black"),
+        axis.text.y = element_text(angle = 45, hjust = 1, size = 12),
+        legend.position = "none")+
+  labs(x="",y="heterozygosity / Pi")+
+  scale_y_continuous(sec.axis = sec_axis(trans = (~.*1), name="Pi"))
+
+#save plot
+het.plot<-ggplot(plotting.df, aes(x=admix.assign, y=obs.het)) + 
+  #geom_violin(trim = FALSE)+
+  geom_dotplot(binaxis='y', stackdir='center', dotsize = 2.3, alpha=.8, aes(fill=admix.assign, col=admix.assign))+
+  theme_bw()+
+  scale_fill_manual(values=c("#AA4499","#882255","#332288","#88CCEE","#CC6677","#44AA99","#117733","#999933","grey","#DDCC77"))+
+  scale_color_manual(values=c("#AA4499","#882255","#332288","#88CCEE","#CC6677","#44AA99","#117733","#999933","grey","#DDCC77"))+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1,size=12, face = "italic", color="black"),
+        axis.text.y = element_text(angle = 45, hjust = 1, size = 12),
+        legend.position = "none", panel.border = element_rect(linewidth = 2))+
+  geom_point(pi.pops, mapping=aes(y=Pi), pch=4, cex=3)+
+  labs(x="",y="heterozygosity / Pi")+
+  scale_y_continuous(sec.axis = sec_axis(trans = (~.*1), name="Pi"))
+
+#save plot
+#ggsave("~/Desktop/nmel.ceyx.rad/het.pi.plot.pdf", het.plot, width = 9,height = 2.7,units = "in")
+```

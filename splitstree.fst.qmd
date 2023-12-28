@@ -17,6 +17,7 @@ library(vcfR)
 library(ggplot2)
 library(StAMPP)
 library(adegenet)
+library(SNPfiltR)
 #read vcfr
 v<-read.vcfR("~/Desktop/nmel.ceyx.rad/filtered.snps.vcf.gz")
 ```
@@ -73,7 +74,7 @@ gen@ind.names == samps$ID
 samps<-samps[match(gen@ind.names, samps$ID),]
 gen@ind.names == samps$ID
 #assign samples to pops
-gen@pop<-as.factor(samps$species)
+gen@pop<-as.factor(samps$admix.assign)
 di.heat<-stamppFst(gen)
 m<-di.heat$Fsts
 #fill in upper triangle of matrix
@@ -81,14 +82,19 @@ m[upper.tri(m)] <- t(m)[upper.tri(m)]
 #melt for plotting
 heat <- reshape::melt(m)
 
+#reorder factors for plotting
+plot.order<-c("mulcatus","solitarius","dispar","gentianus","sacerdotis","malaitae","meeki","nigromaxilla","coll.east","coll.west")
+heat$X1<-factor(heat$X1, levels=plot.order)
+heat$X2<-factor(heat$X2, levels=plot.order)
+
 #plot with labels
 ggplot(data = heat, aes(x=X1, y=X2, fill=value)) + 
-  geom_tile(color = "black", size=.1)+
-  geom_text(data=heat,aes(label=round(value, 2)))+
+  geom_tile(color = "black", size=.5)+
+  geom_text(data=heat,aes(label=round(value, 2)), size=2.25)+
   theme_minimal()+
-  scale_fill_gradient2(low = "white", high = "red", space = "Lab", name="Fst") +
+  scale_fill_gradient2(low = "white", high = "darkgrey", space = "Lab", name="Fst") +
   theme(axis.text.x = element_text(angle = 45, hjust = 1),
         axis.text.y = element_text(angle = 45, hjust = 1))
-#ggsave("~/Desktop/nmel.ceyx.rad/all.clades.pairwise.fst.pdf",width=5.4, height=4.4, units="in")
+#ggsave("~/Desktop/nmel.ceyx.rad/all.clades.pairwise.fst.pdf",width=5.2, height=3.8, units="in")
 ```
 
