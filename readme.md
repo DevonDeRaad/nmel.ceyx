@@ -2,6 +2,8 @@
 
 ### This repository will contain documentation of all resources used to analyze the phylogeographic patterns of Northern Melanesian *Ceyx* Kingfishers.
 
+### Mapping
+*    All details for creating maps shown in the manuscript can be found in the folder called [mapping](https://github.com/DevonDeRaad/nmel.ceyx/tree/main/mapping).
 ### Data availability
 *   All input files necessary to recreate this study can be accessed via the folder named [data](https://github.com/DevonDeRaad/nmel.ceyx/tree/main/data).
 
