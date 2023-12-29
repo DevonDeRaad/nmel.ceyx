@@ -35,4 +35,6 @@
     > <https://devonderaad.github.io/nmel.ceyx/splitstree.fst.html>
 
 ### Calculating genetic diversity
+*   The process can be viewed from this link:
+    > <https://devonderaad.github.io/nmel.ceyx/gen.div/assess.gen.div.html>
 
