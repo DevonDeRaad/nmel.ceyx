@@ -27,3 +27,12 @@
 *   The process of constructing a log-lineage through time (LTT) plot based on the maximum clade credibility tree, and simulating the null distribution of LTT plots based on a pure-birth model can be viewed [here](https://devonderaad.github.io/nmel.ceyx/snapp/LTT.plots.html).
 
 ### Testing for gene flow
+*    All input and output files from running the program [Dsuite](https://github.com/millanek/Dsuite) can be found in the folder called [dsuite](https://github.com/DevonDeRaad/nmel.ceyx/tree/main/dsuite).
+*    A detailed walk-through of the entire process including all code can be viewed [here](https://devonderaad.github.io/nmel.ceyx/dsuite/run.dsuite.html).
+
+### Calculating pariwise FST between lineages
+*   The process can be viewed from this link:
+    > <https://devonderaad.github.io/nmel.ceyx/splitstree.fst.html>
+
+### Calculating genetic diversity
+
