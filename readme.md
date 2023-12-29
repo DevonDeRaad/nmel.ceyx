@@ -23,5 +23,7 @@
 
 ### Reconstructing the species tree and assessing diversification
 *   All input and output files plus code for making a species tree can be found in the folder named [SNAPP](https://github.com/DevonDeRaad/nmel.ceyx/tree/main/snapp).
-*   A detailed walk-through of the process can be viewed [here](https://devonderaad.github.io/snapp/execute.snapp.html).
-*   LTT
+*   A detailed walk-through of the process can be viewed [here](https://devonderaad.github.io/nmel.ceyx/snapp/execute.snapp.html).
+*   The process of constructing a log-lineage through time (LTT) plot based on the maximum clade credibility tree, and simulating the null distribution of LTT plots based on a pure-birth model can be viewed [here](https://devonderaad.github.io/nmel.ceyx/snapp/LTT.plots.html).
+
+### Testing for gene flow
