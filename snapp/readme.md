@@ -1,0 +1,6 @@
+#SNAPP runs
+The three random downsampling procedures each have a unique prefix (rep1, rep2, and rep3). So, each BEAST input file is labeled as repX.xml, and each set of samples species trees is labeled repX.trees, etc. 
+
+Rep3 had the greatest posterior probability, so the results from this replicate were shown in the paper and used in the lineage-through-time testing.
+
+During peer review, reviewers raised the question of whether each of these three chains, if run with a different starting seed, would reliably converge on the same result. To verify this, we ran each of these three separate downsampling schemes in replicate two additional times, with different starting seeds (3 downsampling schemes x 3 unique starting seeds = 9 total replicates). Those additional replicates for convergence verification can be found in the folders labeled with the downsampling scheme prefix and a unique replicate suffix (e.g., rep1.r2 means the same input file and sampling scheme as the files found in this folder with the prefix 'rep1', repeated with a unique starting seed. rep1.r3 is yet another replicate of that same input file). A comprehensive investigation ensuring consistent convergence and consistent results in the LTT plots across all species tree analyses can be found at XXX.
