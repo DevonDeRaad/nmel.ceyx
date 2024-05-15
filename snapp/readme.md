@@ -1,4 +1,4 @@
-#SNAPP runs
+# SNAPP runs
 The three random downsampling procedures each have a unique prefix (rep1, rep2, and rep3). So, each BEAST input file is labeled as repX.xml, and each set of samples species trees is labeled repX.trees, etc. 
 
 Rep3 had the greatest posterior probability, so the results from this replicate were shown in the paper and used in the lineage-through-time testing.
