@@ -25,6 +25,7 @@
 *   All input and output files plus code for making a species tree can be found in the folder named [SNAPP](https://github.com/DevonDeRaad/nmel.ceyx/tree/main/snapp).
 *   A detailed walk-through of the process can be viewed [here](https://devonderaad.github.io/nmel.ceyx/snapp/execute.snapp.html).
 *   The process of constructing a log-lineage through time (LTT) plot based on the maximum clade credibility tree, and simulating the null distribution of LTT plots based on a pure-birth model can be viewed [here](https://devonderaad.github.io/nmel.ceyx/snapp/LTT.plots.html).
+*   During the peer review process, reviewers raised concerns that the early burst pattern we recovered could be a product of idiosyncracies in the MCMC approach. To investigate this possibility, we repeated the entire procedure (generating the SNAPP tree and assessing the resulting emirpical LTT plot against simulations) 9 times using 3 different downsampling schemes, each repeated three times. All of these trees consistently converged and generated the same pattern, giving us confidence in the robustness of this key result. Please view this whole investigation here: [https://devonderaad.github.io/nmel.ceyx/snapp/verify.snapp.results/verify.snapp.results.html](https://devonderaad.github.io/nmel.ceyx/snapp/verify.snapp.results/verify.snapp.results.html).
 
 ### Testing for gene flow
 *    All input and output files from running the program [Dsuite](https://github.com/millanek/Dsuite) can be found in the folder called [dsuite](https://github.com/DevonDeRaad/nmel.ceyx/tree/main/dsuite).
