@@ -1,0 +1,406 @@
+---
+title: "Check that we consistently recover the early burst pattern across replicates and downsampling schemes"
+format:
+  html:
+    code-fold: show
+    code-tools: true
+toc: true
+toc-title: Document Contents
+number-sections: true
+embed-resources: true
+---
+
+First, check that the three replicates for each downsampling scheme converged, with appropriate effective sample sizes (>200).
+
+## Rep1 check convergence
+```{r}
+#show ESS for individual replicates
+#rep1
+knitr::include_graphics("/Users/devonderaad/Desktop/ESS.r1.r1.png")
+#rep2
+knitr::include_graphics("/Users/devonderaad/Desktop/ESS.r1.r2.png")
+#rep3
+knitr::include_graphics("/Users/devonderaad/Desktop/ESS.r1.r3.png")
+#all three chains combined all converged on the same parameters
+knitr::include_graphics("/Users/devonderaad/Desktop/ESS.r1.all.png")
+
+#check Gelman-Rubin diagnostic. If PSRF scores are near 1, then we are confident the chain has converged
+library(stableGR)
+#rep1.r1
+x<-read.table("~/Desktop/nmel.ceyx.rad/snapp/rep1.log", header=T)
+xx<-as.matrix(x[454:2001,2:7])
+stable.GR(xx)
+#rep1.r2
+y<-read.table("~/Desktop/nmel.ceyx.rad/snapp/rep1.r2/rep1.log", header=T)
+yy<-as.matrix(y[451:2001,2:7])
+stable.GR(yy)
+#rep1.r3
+z<-read.table("~/Desktop/nmel.ceyx.rad/snapp/rep1.r3/rep1.log", header=T)
+zz<-as.matrix(z[452:2001,2:7])
+stable.GR(zz)
+```
+
+## Rep2 check convergence
+```{r}
+#show ESS for individual replicates
+#rep1
+knitr::include_graphics("/Users/devonderaad/Desktop/ESS.r2.r1.png")
+#rep2
+knitr::include_graphics("/Users/devonderaad/Desktop/ESS.r2.r2.png")
+#rep3
+knitr::include_graphics("/Users/devonderaad/Desktop/ESS.r2.r3.png")
+#all three chains combined all converged on the same parameters
+knitr::include_graphics("/Users/devonderaad/Desktop/ESS.r2.all.png")
+
+#check Gelman-Rubin diagnostic. If PSRF scores are near 1, then we are confident the chain has converged
+#rep1.r1
+x<-read.table("~/Desktop/nmel.ceyx.rad/snapp/rep2.log", header=T)
+xx<-as.matrix(x[451:2001,2:7])
+stable.GR(xx)
+#rep1.r2
+y<-read.table("~/Desktop/nmel.ceyx.rad/snapp/rep2.r2/rep2.log", header=T)
+yy<-as.matrix(y[452:2001,2:7])
+stable.GR(yy)
+#rep1.r3
+z<-read.table("~/Desktop/nmel.ceyx.rad/snapp/rep2.r3/rep2.log", header=T)
+zz<-as.matrix(z[453:2001,2:7])
+stable.GR(zz)
+```
+
+## Rep3 check convergence
+```{r}
+#show ESS for individual replicates
+#rep1
+knitr::include_graphics("/Users/devonderaad/Desktop/ESS.r3.r1.png")
+#rep2
+knitr::include_graphics("/Users/devonderaad/Desktop/ESS.r3.r2.png")
+#rep3
+knitr::include_graphics("/Users/devonderaad/Desktop/ESS.r3.r3.png")
+#all three chains combined all converged on the same parameters
+knitr::include_graphics("/Users/devonderaad/Desktop/ESS.r3.all.png")
+
+#check Gelman-Rubin diagnostic. If PSRF scores are near 1, then we are confident the chain has converged
+#rep3.r1
+x<-read.table("~/Desktop/nmel.ceyx.rad/snapp/rep3.log", header=T)
+xx<-as.matrix(x[452:2001,2:7])
+stable.GR(xx)
+#rep3.r2
+y<-read.table("~/Desktop/nmel.ceyx.rad/snapp/rep3.r2/rep3.log", header=T)
+yy<-as.matrix(y[452:2001,2:7])
+stable.GR(yy)
+#rep3.r3
+z<-read.table("~/Desktop/nmel.ceyx.rad/snapp/rep3.r3/rep3.log", header=T)
+zz<-as.matrix(z[452:2001,2:7])
+stable.GR(zz)
+```
+
+
+## Check whether early burst is found in each replicate: Rep1(r1)
+```{r}
+#phytools approach
+library(phytools)
+#read in the consensus tree
+tree <- ape::read.nexus(file = "~/Desktop/nmel.ceyx.rad/snapp/rep1.con.tree")
+#remove root so that only the diversification rate within the northern Melanesian clade is assessed
+tree<-drop.tip(tree, "margarethae")
+
+#set h = the height of the empirical tree
+h<-max(nodeHeights(tree))
+h
+#set x as 1000 evenly spaced numbers between zero and the height of the input tree
+x<-seq(0,h,by=h/1000)
+#set birth rate equal to a log-linear rate, following a pure birth prediction
+b<-(log(Ntip(tree))-log(2))/h
+#simulate 1000 trees with the same height and tip number as our empirical tree, plus a log-linear diversification rate
+trees<-pbtree(b=b, n=Ntip(tree), t=h,nsim=1000 ,method="direct", quiet=TRUE)
+
+#calculate 95% CI for the 1000 trees simmed above under a pure birth/death model
+object<-ltt95(trees,log=TRUE,plot=FALSE, mode = "mean")
+#set up the plot
+par(bty="l")
+#plot background 95% CI based on simulated data
+plot(object, labels=FALSE, shaded=TRUE, xaxis = "negative", bg="grey90")
+axis(side = 1, at=seq(-4,0, by=.5))
+#cover the mean line with a grey line
+lines(x=object[,1]-max(object[,1]),y=object[,3], type="l", lwd=2, col="grey60")
+#plot empirical LTT
+obj2<-ltt(tree, plot=FALSE)
+#flip x axis values to negative
+obj2$times<-obj2$times-max(obj2$times)
+#plot on top of existing plot
+plot(obj2, add=TRUE, log.lineages=FALSE, col="black", lwd=4, lty=1)
+```
+
+## Check whether early burst is found in each replicate: Rep1(r2)
+```{r}
+#read in the consensus tree
+tree <- ape::read.nexus(file = "~/Desktop/nmel.ceyx.rad/snapp/rep1.r2/rep1.con.tree")
+#remove root so that only the diversification rate within the northern Melanesian clade is assessed
+tree<-drop.tip(tree, "margarethae")
+
+#set h = the height of the empirical tree
+h<-max(nodeHeights(tree))
+h
+#set x as 1000 evenly spaced numbers between zero and the height of the input tree
+x<-seq(0,h,by=h/1000)
+#set birth rate equal to a log-linear rate, following a pure birth prediction
+b<-(log(Ntip(tree))-log(2))/h
+#simulate 1000 trees with the same height and tip number as our empirical tree, plus a log-linear diversification rate
+trees<-pbtree(b=b, n=Ntip(tree), t=h,nsim=1000 ,method="direct", quiet=TRUE)
+
+#calculate 95% CI for the 1000 trees simmed above under a pure birth/death model
+object<-ltt95(trees,log=TRUE,plot=FALSE, mode = "mean")
+#set up the plot
+par(bty="l")
+#plot background 95% CI based on simulated data
+plot(object, labels=FALSE, shaded=TRUE, xaxis = "negative", bg="grey90")
+axis(side = 1, at=seq(-4,0, by=.5))
+#cover the mean line with a grey line
+lines(x=object[,1]-max(object[,1]),y=object[,3], type="l", lwd=2, col="grey60")
+#plot empirical LTT
+obj2<-ltt(tree, plot=FALSE)
+#flip x axis values to negative
+obj2$times<-obj2$times-max(obj2$times)
+#plot on top of existing plot
+plot(obj2, add=TRUE, log.lineages=FALSE, col="black", lwd=4, lty=1)
+```
+
+## Check whether early burst is found in each replicate: Rep1(r3)
+```{r}
+#read in the consensus tree
+tree <- ape::read.nexus(file = "~/Desktop/nmel.ceyx.rad/snapp/rep1.r3/rep1.con.tree")
+#remove root so that only the diversification rate within the northern Melanesian clade is assessed
+tree<-drop.tip(tree, "margarethae")
+
+#set h = the height of the empirical tree
+h<-max(nodeHeights(tree))
+h
+#set x as 1000 evenly spaced numbers between zero and the height of the input tree
+x<-seq(0,h,by=h/1000)
+#set birth rate equal to a log-linear rate, following a pure birth prediction
+b<-(log(Ntip(tree))-log(2))/h
+#simulate 1000 trees with the same height and tip number as our empirical tree, plus a log-linear diversification rate
+trees<-pbtree(b=b, n=Ntip(tree), t=h,nsim=1000 ,method="direct", quiet=TRUE)
+
+#calculate 95% CI for the 1000 trees simmed above under a pure birth/death model
+object<-ltt95(trees,log=TRUE,plot=FALSE, mode = "mean")
+#set up the plot
+par(bty="l")
+#plot background 95% CI based on simulated data
+plot(object, labels=FALSE, shaded=TRUE, xaxis = "negative", bg="grey90")
+axis(side = 1, at=seq(-4,0, by=.5))
+#cover the mean line with a grey line
+lines(x=object[,1]-max(object[,1]),y=object[,3], type="l", lwd=2, col="grey60")
+#plot empirical LTT
+obj2<-ltt(tree, plot=FALSE)
+#flip x axis values to negative
+obj2$times<-obj2$times-max(obj2$times)
+#plot on top of existing plot
+plot(obj2, add=TRUE, log.lineages=FALSE, col="black", lwd=4, lty=1)
+```
+
+
+## Check whether early burst is found in each replicate: Rep2(r1)
+```{r}
+#read in the consensus tree
+tree <- ape::read.nexus(file = "~/Desktop/nmel.ceyx.rad/snapp/rep2.con.tree")
+#remove root so that only the diversification rate within the northern Melanesian clade is assessed
+tree<-drop.tip(tree, "margarethae")
+
+#set h = the height of the empirical tree
+h<-max(nodeHeights(tree))
+h
+#set x as 1000 evenly spaced numbers between zero and the height of the input tree
+x<-seq(0,h,by=h/1000)
+#set birth rate equal to a log-linear rate, following a pure birth prediction
+b<-(log(Ntip(tree))-log(2))/h
+#simulate 1000 trees with the same height and tip number as our empirical tree, plus a log-linear diversification rate
+trees<-pbtree(b=b, n=Ntip(tree), t=h,nsim=1000 ,method="direct", quiet=TRUE)
+
+#calculate 95% CI for the 1000 trees simmed above under a pure birth/death model
+object<-ltt95(trees,log=TRUE,plot=FALSE, mode = "mean")
+#set up the plot
+par(bty="l")
+#plot background 95% CI based on simulated data
+plot(object, labels=FALSE, shaded=TRUE, xaxis = "negative", bg="grey90")
+axis(side = 1, at=seq(-4,0, by=.5))
+#cover the mean line with a grey line
+lines(x=object[,1]-max(object[,1]),y=object[,3], type="l", lwd=2, col="grey60")
+#plot empirical LTT
+obj2<-ltt(tree, plot=FALSE)
+#flip x axis values to negative
+obj2$times<-obj2$times-max(obj2$times)
+#plot on top of existing plot
+plot(obj2, add=TRUE, log.lineages=FALSE, col="black", lwd=4, lty=1)
+```
+
+## Check whether early burst is found in each replicate: Rep2(r2)
+```{r}
+#read in the consensus tree
+tree <- ape::read.nexus(file = "~/Desktop/nmel.ceyx.rad/snapp/rep2.r2/rep2.con.tree")
+#remove root so that only the diversification rate within the northern Melanesian clade is assessed
+tree<-drop.tip(tree, "margarethae")
+
+#set h = the height of the empirical tree
+h<-max(nodeHeights(tree))
+h
+#set x as 1000 evenly spaced numbers between zero and the height of the input tree
+x<-seq(0,h,by=h/1000)
+#set birth rate equal to a log-linear rate, following a pure birth prediction
+b<-(log(Ntip(tree))-log(2))/h
+#simulate 1000 trees with the same height and tip number as our empirical tree, plus a log-linear diversification rate
+trees<-pbtree(b=b, n=Ntip(tree), t=h,nsim=1000 ,method="direct", quiet=TRUE)
+
+#calculate 95% CI for the 1000 trees simmed above under a pure birth/death model
+object<-ltt95(trees,log=TRUE,plot=FALSE, mode = "mean")
+#set up the plot
+par(bty="l")
+#plot background 95% CI based on simulated data
+plot(object, labels=FALSE, shaded=TRUE, xaxis = "negative", bg="grey90")
+axis(side = 1, at=seq(-4,0, by=.5))
+#cover the mean line with a grey line
+lines(x=object[,1]-max(object[,1]),y=object[,3], type="l", lwd=2, col="grey60")
+#plot empirical LTT
+obj2<-ltt(tree, plot=FALSE)
+#flip x axis values to negative
+obj2$times<-obj2$times-max(obj2$times)
+#plot on top of existing plot
+plot(obj2, add=TRUE, log.lineages=FALSE, col="black", lwd=4, lty=1)
+```
+
+## Check whether early burst is found in each replicate: Rep2(r3)
+```{r}
+#read in the consensus tree
+tree <- ape::read.nexus(file = "~/Desktop/nmel.ceyx.rad/snapp/rep2.r3/rep2.con.tree")
+#remove root so that only the diversification rate within the northern Melanesian clade is assessed
+tree<-drop.tip(tree, "margarethae")
+
+#set h = the height of the empirical tree
+h<-max(nodeHeights(tree))
+h
+#set x as 1000 evenly spaced numbers between zero and the height of the input tree
+x<-seq(0,h,by=h/1000)
+#set birth rate equal to a log-linear rate, following a pure birth prediction
+b<-(log(Ntip(tree))-log(2))/h
+#simulate 1000 trees with the same height and tip number as our empirical tree, plus a log-linear diversification rate
+trees<-pbtree(b=b, n=Ntip(tree), t=h,nsim=1000 ,method="direct", quiet=TRUE)
+
+#calculate 95% CI for the 1000 trees simmed above under a pure birth/death model
+object<-ltt95(trees,log=TRUE,plot=FALSE, mode = "mean")
+#set up the plot
+par(bty="l")
+#plot background 95% CI based on simulated data
+plot(object, labels=FALSE, shaded=TRUE, xaxis = "negative", bg="grey90")
+axis(side = 1, at=seq(-4,0, by=.5))
+#cover the mean line with a grey line
+lines(x=object[,1]-max(object[,1]),y=object[,3], type="l", lwd=2, col="grey60")
+#plot empirical LTT
+obj2<-ltt(tree, plot=FALSE)
+#flip x axis values to negative
+obj2$times<-obj2$times-max(obj2$times)
+#plot on top of existing plot
+plot(obj2, add=TRUE, log.lineages=FALSE, col="black", lwd=4, lty=1)
+```
+
+## Check whether early burst is found in each replicate: Rep3(r1)
+```{r}
+#read in the consensus tree
+tree <- ape::read.nexus(file = "~/Desktop/nmel.ceyx.rad/snapp/rep3.consensus.tree")
+#remove root so that only the diversification rate within the northern Melanesian clade is assessed
+tree<-drop.tip(tree, "margarethae")
+
+#set h = the height of the empirical tree
+h<-max(nodeHeights(tree))
+h
+#set x as 1000 evenly spaced numbers between zero and the height of the input tree
+x<-seq(0,h,by=h/1000)
+#set birth rate equal to a log-linear rate, following a pure birth prediction
+b<-(log(Ntip(tree))-log(2))/h
+#simulate 1000 trees with the same height and tip number as our empirical tree, plus a log-linear diversification rate
+trees<-pbtree(b=b, n=Ntip(tree), t=h,nsim=1000 ,method="direct", quiet=TRUE)
+
+#calculate 95% CI for the 1000 trees simmed above under a pure birth/death model
+object<-ltt95(trees,log=TRUE,plot=FALSE, mode = "mean")
+#set up the plot
+par(bty="l")
+#plot background 95% CI based on simulated data
+plot(object, labels=FALSE, shaded=TRUE, xaxis = "negative", bg="grey90")
+axis(side = 1, at=seq(-4,0, by=.5))
+#cover the mean line with a grey line
+lines(x=object[,1]-max(object[,1]),y=object[,3], type="l", lwd=2, col="grey60")
+#plot empirical LTT
+obj2<-ltt(tree, plot=FALSE)
+#flip x axis values to negative
+obj2$times<-obj2$times-max(obj2$times)
+#plot on top of existing plot
+plot(obj2, add=TRUE, log.lineages=FALSE, col="black", lwd=4, lty=1)
+```
+
+## Check whether early burst is found in each replicate: Rep3(r2)
+```{r}
+#read in the consensus tree
+tree <- ape::read.nexus(file = "~/Desktop/nmel.ceyx.rad/snapp/rep3.r2/rep3.con.tree")
+#remove root so that only the diversification rate within the northern Melanesian clade is assessed
+tree<-drop.tip(tree, "margarethae")
+
+#set h = the height of the empirical tree
+h<-max(nodeHeights(tree))
+h
+#set x as 1000 evenly spaced numbers between zero and the height of the input tree
+x<-seq(0,h,by=h/1000)
+#set birth rate equal to a log-linear rate, following a pure birth prediction
+b<-(log(Ntip(tree))-log(2))/h
+#simulate 1000 trees with the same height and tip number as our empirical tree, plus a log-linear diversification rate
+trees<-pbtree(b=b, n=Ntip(tree), t=h,nsim=1000 ,method="direct", quiet=TRUE)
+
+#calculate 95% CI for the 1000 trees simmed above under a pure birth/death model
+object<-ltt95(trees,log=TRUE,plot=FALSE, mode = "mean")
+#set up the plot
+par(bty="l")
+#plot background 95% CI based on simulated data
+plot(object, labels=FALSE, shaded=TRUE, xaxis = "negative", bg="grey90")
+axis(side = 1, at=seq(-4,0, by=.5))
+#cover the mean line with a grey line
+lines(x=object[,1]-max(object[,1]),y=object[,3], type="l", lwd=2, col="grey60")
+#plot empirical LTT
+obj2<-ltt(tree, plot=FALSE)
+#flip x axis values to negative
+obj2$times<-obj2$times-max(obj2$times)
+#plot on top of existing plot
+plot(obj2, add=TRUE, log.lineages=FALSE, col="black", lwd=4, lty=1)
+```
+
+
+## Check whether early burst is found in each replicate: Rep3(r3)
+```{r}
+#read in the consensus tree
+tree <- ape::read.nexus(file = "~/Desktop/nmel.ceyx.rad/snapp/rep3.r3/rep3.con.tree")
+#remove root so that only the diversification rate within the northern Melanesian clade is assessed
+tree<-drop.tip(tree, "margarethae")
+
+#set h = the height of the empirical tree
+h<-max(nodeHeights(tree))
+h
+#set x as 1000 evenly spaced numbers between zero and the height of the input tree
+x<-seq(0,h,by=h/1000)
+#set birth rate equal to a log-linear rate, following a pure birth prediction
+b<-(log(Ntip(tree))-log(2))/h
+#simulate 1000 trees with the same height and tip number as our empirical tree, plus a log-linear diversification rate
+trees<-pbtree(b=b, n=Ntip(tree), t=h,nsim=1000 ,method="direct", quiet=TRUE)
+
+#calculate 95% CI for the 1000 trees simmed above under a pure birth/death model
+object<-ltt95(trees,log=TRUE,plot=FALSE, mode = "mean")
+#set up the plot
+par(bty="l")
+#plot background 95% CI based on simulated data
+plot(object, labels=FALSE, shaded=TRUE, xaxis = "negative", bg="grey90")
+axis(side = 1, at=seq(-4,0, by=.5))
+#cover the mean line with a grey line
+lines(x=object[,1]-max(object[,1]),y=object[,3], type="l", lwd=2, col="grey60")
+#plot empirical LTT
+obj2<-ltt(tree, plot=FALSE)
+#flip x axis values to negative
+obj2$times<-obj2$times-max(obj2$times)
+#plot on top of existing plot
+plot(obj2, add=TRUE, log.lineages=FALSE, col="black", lwd=4, lty=1)
+```
