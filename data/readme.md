@@ -8,6 +8,6 @@
 - The table detailing the exact locality and species identity of all samples is called [ceyx.full.sampling.csv](https://github.com/DevonDeRaad/nmel.ceyx/blob/main/data/ceyx.full.sampling.csv).
 
 ## Raw Illumina sequence data is available on NCBI
-- By following this link XXX to BioProject XXX
+- At BioProject PRJNA1128088, direct link here: [http://www.ncbi.nlm.nih.gov/bioproject/1128088](http://www.ncbi.nlm.nih.gov/bioproject/1128088)
 
 - These raw data were mapped to the *Ceyx cyanopectus* reference genome, available from NCBI at this [link](https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_013401355.1/).
