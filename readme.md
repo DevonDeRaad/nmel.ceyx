@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/724345112.svg)](https://zenodo.org/doi/10.5281/zenodo.12534730)
 
-### This repository contains documentation of all resources used to analyze the phylogeographic patterns of Northern Melanesian *Ceyx* Kingfishers for the manuscript "Genomic patterns in the dwarf kingfishers of northern Melanesia reveal a mechanistic framework explaining the paradox of the great speciators", published in the journal Evolution Letters.
+### This repository contains documentation of all resources used to analyze the phylogeographic patterns of Northern Melanesian *Ceyx* Kingfishers for the manuscript "Genomic patterns in the dwarf kingfishers of northern Melanesia reveal a mechanistic framework explaining the paradox of the great speciators", published in the journal Evolution Letters. A permanent DOI link to read the open access manuscript is here: [https://doi.org/10.1093/evlett/qrae035](https://doi.org/10.1093/evlett/qrae035)
 
 ### Mapping
 *    All details for creating maps shown in the manuscript can be found in the folder called [mapping](https://github.com/DevonDeRaad/nmel.ceyx/tree/main/mapping).
